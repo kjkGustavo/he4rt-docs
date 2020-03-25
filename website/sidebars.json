@@ -1,0 +1,14 @@
+{
+  "linux-para-iniciantes": {
+    "Introdução": ["linux-para-iniciantes/introducao"],
+    "O Open Source": [
+      "linux-para-iniciantes/o-open-source/linux-distribuicoes",
+      "linux-para-iniciantes/o-open-source/nocoes-basicas",
+      "linux-para-iniciantes/o-open-source/linux-aplicativos"
+    ],
+    "Linha de comando": ["linux-para-iniciantes/nocoes-basicas"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
