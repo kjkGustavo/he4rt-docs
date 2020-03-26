@@ -82,6 +82,11 @@ footer {
 }
 
 .courses .course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   background: #0a0a0a;
   padding: 30px;
   border: 2px solid #1a1a1a;
@@ -92,6 +97,12 @@ footer {
   min-width: 400px;
   max-width: 400px;
   max-height: 400px;
+}
+
+.soon {
+  opacity: 40%;
+  border: none !important;
+  cursor: not-allowed !important;
 }
 
 .courses .course:hover {
@@ -111,4 +122,16 @@ footer {
 
 .courses .course h3 {
   margin: 2rem 0 1rem;
+}
+
+.courses .course span {
+  background: orange;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  margin: 10px;
+  padding: 5px 10px;
+
+  border-radius: 10px;
 }

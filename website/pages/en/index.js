@@ -15,46 +15,36 @@ const GridBlock = CompLibrary.GridBlock;
 
 const courses = [
   {
+    title: 'Git para iniciantes',
     content: 'Tutorial de Git para iniciantes em programação.',
     image: `https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png`,
     imageAlign: 'top',
     href: 'git-para-iniciantes',
-    title: 'Git para iniciantes'
+    finished: true
   },
   {
-    content: 'Tutorial de Git para iniciantes em programação.',
-    image: `https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png`,
-    imageAlign: 'top',
-    href: 'git-para-iniciantes',
-    title: 'Git para iniciantes'
-  },
-  {
-    content: 'Tutorial de Git para iniciantes em programação.',
-    image: `https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png`,
-    imageAlign: 'top',
-    href: 'git-para-iniciantes',
-    title: 'Git para iniciantes'
-  },
-  {
-    content: 'Tutorial de Git para iniciantes em programação.',
-    image: `https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png`,
-    imageAlign: 'top',
-    href: 'git-para-iniciantes',
-    title: 'Git para iniciantes'
-  },
-  {
-    content: 'Tutorial de Git para iniciantes em programação.',
-    image: `https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png`,
-    imageAlign: 'top',
-    href: 'git-para-iniciantes',
-    title: 'Git para iniciantes'
-  },
-  {
+    title: 'Linux para iniciantes',
     content: 'Tutorial de Linux para iniciantes em programação.',
-    image: `https://www.pinclipart.com/picdir/big/27-278237_o-how-to-set-up-home-vpn-linux.png`,
-    imageAlign: 'top',
+    image: `https://cdn.svgporn.com/logos/linux-tux.svg`,
     href: 'courses/linux-para-iniciantes/introducao',
-    title: 'Linux para iniciantes'
+    imageAlign: 'top',
+    finished: true
+  },
+  {
+    title: 'C++ para iniciantes',
+    content: 'Tutorial de C++ para iniciantes em programação.',
+    image: `https://cdn.svgporn.com/logos/c-plusplus.svg`,
+    imageAlign: 'top',
+    href: 'git-para-iniciantes',
+    finished: true
+  },
+  {
+    title: 'PHP para iniciantes',
+    content: 'Tutorial de PHP para iniciantes em programação.',
+    image: `https://cdn.svgporn.com/logos/php.svg`,
+    imageAlign: 'top',
+    href: '#',
+    finished: false
   }
 ];
 
@@ -93,10 +83,15 @@ class HomeSplash extends React.Component {
           <ProjectTitle title={siteConfig.title} />
           <div className="courses">
             {courses.map(c => (
-              <a key={c.href} className="course" href={c.href}>
+              <a
+                key={c.href}
+                className={!c.finished ? 'course soon' : 'course'}
+                href={c.href}
+              >
                 <img src={c.image} width="120px" />
                 <h3>{c.title}</h3>
                 <p>{c.content}</p>
+                {!c.finished && <span>Em breve</span>}
               </a>
             ))}
           </div>
