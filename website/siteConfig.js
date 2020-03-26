@@ -22,8 +22,8 @@ const users = [
 
 const siteConfig = {
   docsUrl: 'courses',
-  title: 'Cursos gratuitos', // Title for your website.
-  tagline: 'A website for testing',
+  title: 'He4rtDevs Estudos', // Title for your website.
+  tagline: 'Da comunidade para a comunidade!',
   url: 'https://estudos.heartdevs.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:

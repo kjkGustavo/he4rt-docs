@@ -9,10 +9,6 @@ const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
 
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
-const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
-
 const courses = [
   {
     title: 'Git para iniciantes',
@@ -80,7 +76,7 @@ class HomeSplash extends React.Component {
     return (
       <SplashContainer>
         <div className="inner">
-          <ProjectTitle title={siteConfig.title} />
+          <ProjectTitle title={siteConfig.title} tagline={siteConfig.tagline} />
           <div className="courses">
             {courses.map(c => (
               <a
