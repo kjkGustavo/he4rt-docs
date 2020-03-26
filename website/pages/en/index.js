@@ -15,7 +15,7 @@ const courses = [
     content: "Tutorial de Git para iniciantes em programação.",
     image: `https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png`,
     imageAlign: "top",
-    href: "courses/git-para-iniciantes",
+    href: "courses/git-para-iniciantes/introducao",
     finished: true
   },
   {

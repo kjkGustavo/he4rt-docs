@@ -1,4 +1,31 @@
 {
+  "git-para-iniciantes": {
+    "Introdução": ["git-para-iniciantes/introducao"],
+    "Pré-requisitos": [
+      "git-para-iniciantes/pre-requisitos/git-pre-requisitos",
+      "git-para-iniciantes/pre-requisitos/git-pre-requisitos-windows",
+      "git-para-iniciantes/pre-requisitos/git-pre-requisitos-linux"
+    ],
+    "O que é git?": [
+      "git-para-iniciantes/o-que-e-git/git-exemplo-1",
+      "git-para-iniciantes/o-que-e-git/git-exemplo-2"
+    ],
+    "Conceitos e Comandos": [
+      "git-para-iniciantes/comandos/git-repositorio",
+      "git-para-iniciantes/comandos/git-commit",
+      "git-para-iniciantes/comandos/git-branch",
+      "git-para-iniciantes/comandos/git-merge",
+      "git-para-iniciantes/comandos/git-status",
+      "git-para-iniciantes/comandos/git-diff"
+    ],
+    "Git Flow": [
+      "git-para-iniciantes/gitflow/git-gitflow",
+      "git-para-iniciantes/gitflow/git-estrutura-gitflow",
+      "git-para-iniciantes/gitflow/git-releases",
+      "git-para-iniciantes/gitflow/git-exemplos-gitflow"
+    ],
+    "Conclusão": ["git-para-iniciantes/git-conclusao"]
+  },
   "linux-para-iniciantes": {
     "Introdução": ["linux-para-iniciantes/introducao"],
     "O Open Source": [
@@ -34,8 +61,5 @@
       "linux-para-iniciantes/linux-backup",
       "linux-para-iniciantes/linux-estrutura-diretorios"
     ]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
   }
 }
