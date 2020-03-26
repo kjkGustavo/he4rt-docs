@@ -7,7 +7,7 @@ custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc
 ---
 
 <h1 align="center">
-  <img src="../assets/images/git-para-iniciantes/Tux.svg" alt="Tux" width="120px" />
+  <img src="../assets/images/linux-para-iniciantes/Tux.svg" alt="Tux" width="120px" />
 </h1>
 
 <p align="center">Tutorial de Linux para iniciantes em programação.</p>

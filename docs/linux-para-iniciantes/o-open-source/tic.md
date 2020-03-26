@@ -1,6 +1,6 @@
 ---
 id: linux-tic
-title: Tecnologias Da Informação e Comunicação(TIC)
+title: Tecnologias Da Informação e Comunicação
 ---
 
 # Tecnologias Da Informação e Comunicação(Tic)
