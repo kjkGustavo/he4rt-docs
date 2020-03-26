@@ -8,12 +8,26 @@
 /* your custom css */
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+  .navigationSlider .slidingNav ul li {
+    background-color: #000;
+    border-color: #9164cd;
+  }
+
+  /* TODO conseguir fazer esse css funcionar pra ficar mais legal no mobile */
+  .navPusher > div .homeContainer.homeSplashFade {
+    display: flex !important;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
 }
 
 @media only screen and (max-width: 1023px) {
+  .navigationSlider .slidingNav ul li {
+    background-color: #000;
+    border-color: #9164cd;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
