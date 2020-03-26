@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "docusaurus": "^1.14.4"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "styled-components": "^5.0.1"
   }
 }
