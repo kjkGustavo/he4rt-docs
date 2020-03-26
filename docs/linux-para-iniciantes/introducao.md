@@ -7,16 +7,16 @@ custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc
 ---
 
 <h1 align="center">
-  <img src="./images/Tux.svg" alt="tux" width="120">
+  <img src="../assets/images/git-para-iniciantes/Tux.svg" alt="Tux" width="120px" />
 </h1>
 
-<p align="center">Tutorial De Linux para iniciantes em Programação.</p>
+<p align="center">Tutorial de Linux para iniciantes em programação.</p>
 
 ## ROADMAP
 
 ### O Open Source
 
-1. [Distribuições](/1-O%20Open%20Source/1-Distros.md)
+1. [Distribuições](/o-open-source/linux-distribuicoes)
 2. [Aplicativos, ferramentas e linguagens](/1-O%20Open%20Source/2-Aplicativos.md)
 3. [Licenças Open Source](1-O%20Open%20Source/3-Licenças.md)
 4. [TIC](/1-O%20Open%20Source/4-TIC.md)
