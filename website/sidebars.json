@@ -3,10 +3,37 @@
     "Introdução": ["linux-para-iniciantes/introducao"],
     "O Open Source": [
       "linux-para-iniciantes/o-open-source/linux-distribuicoes",
-      "linux-para-iniciantes/o-open-source/nocoes-basicas",
-      "linux-para-iniciantes/o-open-source/linux-aplicativos"
+      "linux-para-iniciantes/o-open-source/linux-aplicativos",
+      "linux-para-iniciantes/o-open-source/linux-licensas",
+      "linux-para-iniciantes/o-open-source/linux-tic"
     ],
-    "Linha de comando": ["linux-para-iniciantes/nocoes-basicas"]
+    "Linha de comando básico": [
+      "linux-para-iniciantes/linha-de-comando-basico/linux-basico-cli",
+      "linux-para-iniciantes/linha-de-comando-basico/linux-comandos",
+      "linux-para-iniciantes/linha-de-comando-basico/linux-navegacao",
+      "linux-para-iniciantes/linha-de-comando-basico/linux-manipulacao"
+    ],
+    "Linha de comando avançado": [
+      "linux-para-iniciantes/linha-de-comando-avancado/linux-arquivamento-arquivo",
+      "linux-para-iniciantes/linha-de-comando-avancado/linux-condutores",
+      "linux-para-iniciantes/linha-de-comando-avancado/linux-scripts"
+    ],
+    "Sistemas Operacionais": [
+      "linux-para-iniciantes/sistemas-operacionais/linux-ciclo-vida",
+      "linux-para-iniciantes/sistemas-operacionais/linux-componentes",
+      "linux-para-iniciantes/sistemas-operacionais/linux-armazenamentos",
+      "linux-para-iniciantes/sistemas-operacionais/linux-redes"
+    ],
+    "Segurança": [
+      "linux-para-iniciantes/seguranca/linux-usuario",
+      "linux-para-iniciantes/seguranca/linux-grupos",
+      "linux-para-iniciantes/seguranca/linux-manipulacao",
+      "linux-para-iniciantes/seguranca/linux-permissoes"
+    ],
+    "Outros": [
+      "linux-para-iniciantes/linux-backup",
+      "linux-para-iniciantes/linux-estrutura-diretorios"
+    ]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
