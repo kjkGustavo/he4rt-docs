@@ -13,7 +13,7 @@ class Footer extends React.Component {
     const docsUrl = this.props.config.docsUrl;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
-    return `${baseUrl}${docsPart}${langPart}${doc}`;
+    return `${baseUrl}${docsPart}${langPart}${doc}/introducao`;
   }
 
   pageUrl(doc, language) {
@@ -35,11 +35,14 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Cursos</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
+            <a href={this.docUrl('git-para-iniciantes', this.props.language)}>
               Git para iniciantes
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
+            <a href={this.docUrl('linux-para-inciantes', this.props.language)}>
               Linux para iniciantes
+            </a>
+            <a href={this.docUrl('cpp-para-iniciantes', this.props.language)}>
+              C++ para iniciantes
             </a>
           </div>
           <div>
