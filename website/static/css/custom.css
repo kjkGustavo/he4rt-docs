@@ -12,11 +12,27 @@
     background-color: #000;
     border-color: #9164cd;
   }
+
+  .nav-footer {
+    width: 125vw;
+  }
+
+  .nav-footer > .sitemap > .nav-home {
+    width: 100vw !important;
+  }
 }
 
 @media only screen and (max-device-width: 500px) {
   .homeSplashFade {
     display: flex;
+  }
+
+  .nav-footer {
+    width: 125vw;
+  }
+
+  .nav-footer > .sitemap > .nav-home {
+    width: 100vw !important;
   }
 }
 
