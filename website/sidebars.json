@@ -68,7 +68,10 @@
       "cpp-para-iniciantes/ambiente/cplusplus-configurando",
       "cpp-para-iniciantes/ambiente/cplusplus-falcon"
     ],
-    "Teoria": ["cpp-para-iniciantes/teoria/cplusplus-teoria"],
+    "Teoria": [
+      "cpp-para-iniciantes/teoria/cplusplus-teoria",
+      "cpp-para-iniciantes/teoria/cplusplus-o-que-e-c"
+    ],
     "Hello World": [
       "cpp-para-iniciantes/hello-word/cplusplus-hello",
       "cpp-para-iniciantes/hello-word/cplusplus-sequencia",

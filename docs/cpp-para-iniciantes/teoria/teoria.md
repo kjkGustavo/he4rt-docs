@@ -14,9 +14,3 @@ Como essas instruções estão organizadas está além do escopo desta introduç
 Cada conjunto de dígitos binários é interpretado pela CPU em um comando para fazer um trabalho muito específico, como comparar esses dois números, ou colocar esse número nesse local de memória. No entanto, como CPUs diferentes têm conjuntos de instruções diferentes, instruções que foram escritas para um tipo de CPU não puderam ser usadas em uma CPU que não compartilhava o mesmo conjunto de instruções. Isso significava que os programas geralmente não eram portáveis ​​(utilizáveis ​​sem grandes retrabalhos) para diferentes tipos de sistema e precisavam ser escritos novamente.
 
 Para resolver as questões de legibilidade e portabilidade, novas linguagens de programação, como C, C ++, Pascal (e mais tarde, linguagens como Java, Javascript e Perl) foram desenvolvidas. Essas linguagens são chamadas de linguagens de alto nível, pois são projetadas para permitir que o programador escreva programas sem ter que se preocupar com o tipo de computador no qual o programa será executado.
-
-## O que é C++?
-
-C++ (pronunciado como C plus plus) foi desenvolvido por Bjarne Stroustrup no Bell Labs como uma extensão para C, começando em 1979. C++ adiciona muitos recursos à linguagem C, e pode ser considerado um "superconjunto" do C.
-
-O C++ tem uma enorme variedade de códigos, pois alem de seus códigos, pode contar com vários da linguagem C. Esta variedade possibilita a programação em alto e baixo níveis. O C++ apresenta grande flexibilidade, embora seja bom, este fato faz com que a programação seja muito mais cuidadosa para não terem erros.

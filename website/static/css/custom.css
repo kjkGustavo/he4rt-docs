@@ -36,13 +36,46 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
-}
-
-@media only screen and (max-width: 1023px) {
-  .navigationSlider .slidingNav ul li {
-    background-color: #000;
-    border-color: #9164cd;
+@media only screen and (max-width: 1024px) {
+  .docsNavContainer {
+    top: 100px;
+  }
+  .docsContainer {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+  }
+  .docsSliderActive .toc .navBreadcrumb,
+  .tocActive .navBreadcrumb {
+    background-color: #111111;
+    color: white;
+  }
+  .docsNavContainer .toc .navBreadcrumb {
+    background-color: #111111;
+    color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1), 0 3px 46px rgba(0, 0, 0, 1);
+    border: none;
+  }
+  .docsSliderActive .toc section .navGroups {
+    background-color: #111111;
+    color: white;
+  }
+  .navBreadcrumb a,
+  .navBreadcrumb span {
+    color: white;
+  }
+  .line1,
+  .line2,
+  .line3 {
+    background-color: white;
+  }
+  .tocActive .onPageNav {
+    background-color: #111111;
+  }
+  .onPageNav > .toc-headings {
+    border: none !important;
+  }
+  .navigationSlider .slidingNav ul li a {
+    color: white !important;
   }
 }
 
