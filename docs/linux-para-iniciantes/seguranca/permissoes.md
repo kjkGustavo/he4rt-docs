@@ -3,30 +3,17 @@ id: linux-permissoes
 title: Permissões especiais
 ---
 
-# 03 - Permissões especiais
+## Introdução
 
-## Contéudo do artigo
-
-[Introdução](#Introdução)<br>
-[SUID](#suid)<br>
-[SGID](#sgid)<br>
-[Sticky](#sticky)<br>
-[Referências](#Referências)<br>
-[Autores](#Autores)
-
----
-
-> ### Introdução
->
-> Somente as permissões básicas não dão toda a flexibilidade que precisamos para controlar o acesso a diretórios e arquivos, por este motivo nós temos mais três modelos especiais de permissões para o controle de acesso, o **suid** (set user id), **sgid** e **Sticky** (Sticky bit).
+Somente as permissões básicas não dão toda a flexibilidade que precisamos para controlar o acesso a diretórios e arquivos, por este motivo nós temos mais três modelos especiais de permissões para o controle de acesso, o **suid** (set user id), **sgid** e **Sticky** (Sticky bit).
 
 Exemplo de permissão especial
 
-<img style="width:375px;display: block; margin-left:auto; margin-right: auto;" src="../images/perm_espec.png">
+<img width="375px" src="../../assets/images/linux-para-iniciantes/perm_espec.png">
 
-> ### <span id="suid">SUID (Set User ID)</span>
->
-> O _SUID_ é utilizado somente para arquivos executaveis e não se aplica a diretórios.
+## SUID (Set User ID)
+
+O _SUID_ é utilizado somente para arquivos executaveis e não se aplica a diretórios.
 
 Nas permissões básicas, o usuário que executou o programa é dono do processo. Mas em arquivo executável com a propriedade SUID aplicada, o programa rodará com o ID do dono do arquivo, não com o ID do usuário que executou o programa.
 
@@ -41,9 +28,9 @@ lucashe4rt@He4rt-PC:~$ ls -lah /usr/bin/passwd
 
 Ou seja, quando executamos o comando passwd com qualquer usuário normal, o processo é executado com ID do usuário root (como se o usuário root tivesse executado o comando passwd), pois somente o usuário root tem permissão para alterar o arquivo /etc/passwd.
 
-#### Aplicando o SUID
+### Aplicando o SUID
 
-#### Formato Literal
+### Formato Literal
 
 ```console
 lucashe4rt@He4rt-PC:~$ sudo chmod u+s arquivo.txt
@@ -51,7 +38,7 @@ lucashe4rt@He4rt-PC:~$ ls -lah arquivo.txt
 -rws-----x 1 root root 0 Mar 17 21:57 arquivo.txt
 ```
 
-#### Formato Octal (4)
+### Formato Octal (4)
 
 ```console
 lucashe4rt@He4rt-PC:~$ sudo chmod 4750 arquivo.txt
@@ -61,9 +48,9 @@ lucashe4rt@He4rt-PC:~$ ls -lah arquivo.txt
 
 No exemplo acima nós atribuimos a propriedade SUID (4), seguido de todas as permissões para o dono (7), leitura e execução para o grupo (5) e nenhuma permissão para os outros usuários (0).
 
-#### Retirando o SUID
+## Retirando o SUID
 
-#### Formato Literal
+### Formato Literal
 
 ```console
 lucashe4rt@He4rt-PC:~$ sudo chmod u-s arquivo.txt
@@ -71,7 +58,7 @@ lucashe4rt@He4rt-PC:~$ ls -lah arquivo.txt
 -rwxr-x--- 1 root root 0 Mar 17 21:57 arquivo.txt
 ```
 
-#### Formato Octal
+### Formato Octal
 
 ```console
 lucashe4rt@He4rt-PC:~$ sudo chmod 0750 arquivo.txt
@@ -79,17 +66,17 @@ lucashe4rt@He4rt-PC:~$ ls -lah arquivo.txt
 -rwxr-x--- 1 root root 0 Mar 17 21:57 arquivo.txt
 ```
 
-> ### <span id="sgid"> SGID (Set Group ID) </span>
->
-> O **SGID** E o SUID tem a mesma função porém o **SGID** quando é aplicado em um diretório, os novos arquivos que são criados dentro do diretório assumem o mesmo ID de Grupo do diretório com a propriedade SGID aplicado.
+## SGID (Set Group ID)
+
+O **SGID** E o SUID tem a mesma função porém o **SGID** quando é aplicado em um diretório, os novos arquivos que são criados dentro do diretório assumem o mesmo ID de Grupo do diretório com a propriedade SGID aplicado.
 
 A permissão de acesso especial _SGID_ pode aparecer somente no campo Grupo.
 
 Por exemplo, se no diretório _home_ de algum usuário pertencer ao grupo "noobs" e ter o _SGID_ habilitado, todos os arquivos dentro da _home_ do usuário serão criados com o grupo "noob".
 
-#### Aplicando o SGID
+### Aplicando o SGID
 
-#### Formato Literal
+### Formato Literal
 
 ```console
 lucashe4rt@He4rt-PC:~$ sudo chmod g+s Desktop/
@@ -99,7 +86,7 @@ drwxrwsr-x  2 lucashe4rt lucashe4rt 4.0K Mar 15 17:29 .
 
 _Obs: como sabemos o caractér ponto (**.**) representa o diretório corrente, então como estamos listando o conteúdo de desktop o ponto significa o diretório desktop._
 
-#### Formato Octal (2)
+### Formato Octal (2)
 
 ```console
 lucashe4rt@He4rt-PC:~$ sudo chmod 2750 Desktop/
@@ -109,7 +96,7 @@ drwxr-s---  2 lucashe4rt lucashe4rt 4.0K Mar 15 17:29 .
 
 No exemplo acima nós atribuimos a propriedade SGID (2), seguido de todas as permissões para o dono (7), leitura e execução para o grupo (5) e nenhuma permissão para os outros usuários (0).
 
-#### Retirando o SGID
+### Retirando o SGID
 
 ```console
 lucashe4rt@He4rt-PC:~$ sudo chmod g-s Desktop/
@@ -117,9 +104,9 @@ lucashe4rt@He4rt-PC:~$ ls -lah Desktop/
 drwxr-x---  2 lucashe4rt lucashe4rt 4.0K Mar 15 17:29 .
 ```
 
-> ### <span id="sticky"> Sticky (Sticky bit) </span>
->
-> A propriedade **Sticky**, em arquivos executaveis, faz com que o sistema mantenha uma imagem do programa em memória depois que o programa finalizar. Isso aumenta o desempenho, pois é feito um cache em memória então da próxima que o programa for executado será carregado mais rápido.
+## Sticky (Sticky bit)
+
+A propriedade **Sticky**, em arquivos executaveis, faz com que o sistema mantenha uma imagem do programa em memória depois que o programa finalizar. Isso aumenta o desempenho, pois é feito um cache em memória então da próxima que o programa for executado será carregado mais rápido.
 
 Em diretórios, a propriedade Sticky impede que outros usuários deletem ou renomeam arquivos dos quais não são donos, isto normalmente é utilizado para aumentar a segurança, pois o diretório estará em modo de somente incrementação assim só o dono do arquivo tem permissão para deletar, mover, renomear os arquivos dentro de um diretório com a propriedade Sticky aplicada.
 
@@ -129,9 +116,9 @@ Um exemplo é o diretório _/tmp_, onde todos os usuários devem ter acesso para
 
 Desta forma é uma boa prática aplicar essa propriedade no diretório _/tmp_ visando a segurança.
 
-#### Aplicando Sticky
+### Aplicando Sticky
 
-#### Formato Literal (t)
+### Formato Literal (t)
 
 ```console
 lucashe4rt@He4rt-PC:~$ sudo chmod o+t /tmp/
@@ -139,7 +126,7 @@ lucashe4rt@He4rt-PC:~$ ls -lah /tmp/
 drwxrwxrwt 19 root       root        460 Mar 22 14:35  .
 ```
 
-#### Formato Octal (1)
+### Formato Octal (1)
 
 ```console
 lucashe4rt@He4rt-PC:~$ sudo chmod 1777 /tmp/
@@ -149,7 +136,7 @@ drwxrwxrwt 19 root       root        460 Mar 22 14:35  .
 
 No exemplo acima nós atribuimos a propriedade Sticky (1), seguido de todas as permissões para o dono, grupo e outros usuários respectivamente (777).
 
-##### Retirando Sticky
+#### Retirando Sticky
 
 ```console
 lucashe4rt@He4rt-PC:~$ sudo chmod o-t /tmp/
@@ -163,7 +150,3 @@ drwxrwxrwx 19 root       root        460 Mar 22 14:35  .
 
 [Roberto's Blog - Linux - Permissões de Acesso Especiais](http://robertors.blogspot.com/2006/09/linux-permisses-de-acesso-especiais.html)<br>
 [Guia Foca Linux - Permissões de Acesso Especiais](https://www.guiafoca.org/cgs/guia/iniciante/ch11s05.html)
-
-## Autores
-
-- **Lucas Silva (LucasHe4rt)** - _Back-end Developer & Member of He4rt Developers_ - [Twitter](https://twitter.com/lucashe4rt)

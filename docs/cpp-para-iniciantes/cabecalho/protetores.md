@@ -75,7 +75,7 @@ int main()
 
 Definições duplicadas e um erro de compilação. Cada arquivo, individualmente, está bem. No entanto, como o main.cpp acaba incluindo o conteúdo de a.h duas vezes, encontramos problemas. Se b.hpp precisar de teste() e main.cpp precisar de b.hpp e a.hpp, como você resolveria esse problema?
 
-# Protetores de Cabeçalho
+## Protetores de Cabeçalho
 
 ```cpp{0}
 #ifndef NOME_UNICO

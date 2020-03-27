@@ -3,11 +3,7 @@ id: linux-estrutura-diretorios
 title: Estrutura de diretórios
 ---
 
-# Capítulo 2
-
-> ## Aula 01 - Estrutura de diretórios
->
-> Para entendermos a estrutura de diretórios do linux, vamos navegar para pasta **raiz** (`/`).
+Para entendermos a estrutura de diretórios do linux, vamos navegar para pasta **raiz** (`/`).
 
 ```console
 lucashe4rt@He4rt-PC:~$ cd /
@@ -75,14 +71,14 @@ Agora com os arquivos listados de maneira melhor visivel, vamos explica-los.
 
 ---
 
-> ### **/** - Raiz
->
+## **/** - Raiz
+
 > O diretório **raiz** é onde estão todos os principais diretórios do nosso sistema operacional linux.
 
 _Obs: o único usuário capaz de criar, mover e apagar arquivos nesse diretório é o **root**, ou seja, o administrador._
 
-> ### **/bin** - Binários essênciais
->
+## **/bin** - Binários essênciais
+
 > O diretório **bin** é onde seram armazenados todos os arquivos executaveis padrões e essenciais para a nossa distribuição, variando de distribuição para distribuição. Neste diretório encontraremos os comandos `ls`, `rm`, `cp`, entre outros.
 
 Vamos acessar o diretório e listar seu conteúdo para entendermos melhor:
@@ -94,9 +90,9 @@ lucashe4rt@He4rt-PC:/bin$ ls
 
 Ao executar o comando `ls` será retornado varios arquivos, sendo cada um deles um executavel, essenciais para o sistema, dentro da nossa distribuição.
 
-> ### **/boot** - Arquivos de inicialização
->
-> O diretório **boot** é onde estão armazenados os arquivos relacionados ao "core" do sistema, ou seja, arquivos relacionados ao kernel do sistema operacional.
+## **/boot** - Arquivos de inicialização
+
+O diretório **boot** é onde estão armazenados os arquivos relacionados ao "core" do sistema, ou seja, arquivos relacionados ao kernel do sistema operacional.
 
 Vamos acessar o diretório e listar seu conteúdo para entendermos melhor:
 
@@ -122,10 +118,10 @@ No seu caso podem aparecer alguns outros arquivos, como:
 
 Básicamente é isto que nós podemos encontrar dentro do diretório **boot**.
 
-> ### **/dev** - Arquivos de dipositivos
->
-> É um diretório muito importante para sistemas linux pois ele mapeia cada dispositivo físico que nós temos em arquivos.
-> Vamos entrar no diretório e olhar mais de perto:
+## **/dev** - Arquivos de dipositivos
+
+É um diretório muito importante para sistemas linux pois ele mapeia cada dispositivo físico que nós temos em arquivos.
+Vamos entrar no diretório e olhar mais de perto:
 
 ```console
 lucashe4rt@He4rt-PC:/$ cd dev/
@@ -170,10 +166,10 @@ _Obs: os arquivos deste diretório variam de máquina pra máquina, mas estes t�
 
 Comumente esse diretório não é muito utilizado por nós e sim pelos drivers mas é importante sabermos de sua existencia e que todos dispositivos que temos no sistema estão mapeados aqui.
 
-> ### **/etc** - Arquivos de configuração
->
-> Este diretório é onde o sistema armazena arquivos de configuração, tanto de configuração de serviço como do próprio sistema.
-> Vamos para dentro do diretório e dar uma olhada:
+## **/etc** - Arquivos de configuração
+
+Este diretório é onde o sistema armazena arquivos de configuração, tanto de configuração de serviço como do próprio sistema.
+Vamos para dentro do diretório e dar uma olhada:
 
 ```console
 lucashe4rt@He4rt-PC:/$ cd etc/
@@ -221,9 +217,9 @@ _Obs: os arquivos deste diretório também podem variar de acordo com a distro e
 
 Dentro deste diretório nos podemos encontrar arquivos de configuração de qualquer serviço, executaveis, inicialização, quais serviços irão subir primeiro, quais partições nós temos na nossa máquina, entre outros.
 
-> ### **/home** - Pastas pessoais
->
-> Dentro desse diretório temos todos os diretórios de cada usuário que operam o sistema, ou seja, todos os usuários que logam e utilizam o sistema, porém isto não é regra. Este diretório é semelhante ao "documents and settings" do Windows.
+## **/home** - Pastas pessoais
+
+Dentro desse diretório temos todos os diretórios de cada usuário que operam o sistema, ou seja, todos os usuários que logam e utilizam o sistema, porém isto não é regra. Este diretório é semelhante ao "documents and settings" do Windows.
 
 Vamos acessar o diretório:
 
@@ -283,10 +279,9 @@ lucashe4rt@He4rt-PC:/$ clear
 
 E pronto, agora nosso terminal esta limpo.
 
-> ### **/lib** - Bibliotecas essenciais
->
-> Dentro deste diretório nos iremos encontrar bibliotecas
-> do próprio sistema.
+## **/lib** - Bibliotecas essenciais
+
+Dentro deste diretório nos iremos encontrar bibliotecas do próprio sistema.
 
 Vamos entrar e olhar:
 
@@ -299,8 +294,8 @@ Ao executar o comando `ls` será retornado uma série de arquivos, sendo cada um
 
 _Obs: a quantidade de arquivos pode varias de acordo com a distribuição e o que cada um tem instalado na máquina._
 
-> ### **/mnt** - Montagem de sistemas temporários
->
+## **/mnt** - Montagem de sistemas temporários
+
 > Este diretório é um ponto de montagem temporário para que possamos montar manualmente, por exemplo, um pendrive, uma partição e etc.
 > Se entrarmos dentro dele e exibir seu conteúdo:
 
@@ -312,9 +307,9 @@ lucashe4rt@He4rt-PC:/mnt$
 
 Não tem nada dentro deste diretório por conta dele ser usado como ponto de montagem então como não montamos nenhuma partição esta vazio.
 
-> ### **/opt** - Pacotes opcionais
->
-> Normalmente quando instalamos um software grande, com várias bibliotecas, esse programa geralmente vem para o diretório **/opt**.
+## **/opt** - Pacotes opcionais
+
+Normalmente quando instalamos um software grande, com várias bibliotecas, esse programa geralmente vem para o diretório **/opt**.
 
 Vamos dar uma olhada.
 
@@ -326,9 +321,9 @@ discord  gitkraken  phpstorm  visual-studio-code
 
 _Obs: os arquivos contidos neste diretório variam muito de acordo com o que cada máquina tem instalado, neste caso eu tenho estes softwares._
 
-> ### **/proc** - Kernel e arquivos de processos
->
-> Dentro desse diretório é onde fica os processos da nossa maquina armazenados também em diretórios, ou seja, cada processo em execução o sistema mapea em arquivos/pastas e armazena neste diretório.
+## **/proc** - Kernel e arquivos de processos
+
+Dentro desse diretório é onde fica os processos da nossa maquina armazenados também em diretórios, ou seja, cada processo em execução o sistema mapea em arquivos/pastas e armazena neste diretório.
 
 Vamos entender melhor.
 
@@ -373,12 +368,12 @@ Dentro desse diretório também contém arquivos de estatisticas e de logs.
 
 _Obs: os números que nomeiam os diretórios são na verdade o **PID** do processo dentro do sistema operacional._
 
-> ### **/root** - Home para o super usuário (root)
->
-> Este diretório semelhante a **home** do nosso usuário comum, porém esta pasta é a **home** do nosso usuário **root**, ou seja, aqui estão todos os arquivos pessoais do usuário **root**.
->
-> ### **/run** - Arquivos temporários de aplicativos
->
+## **/root** - Home para o super usuário (root)
+
+Este diretório semelhante a **home** do nosso usuário comum, porém esta pasta é a **home** do nosso usuário **root**, ou seja, aqui estão todos os arquivos pessoais do usuário **root**.
+
+## **/run** - Arquivos temporários de aplicativos
+
 > Este diretório não é padrão em todas as distros, porém, dentro dele nós encontramos arquivos temporários de configuração, arquivos de processos em execução como logs e estatisticas.
 
 Vamos listar esses arquivos:
@@ -395,9 +390,9 @@ dmeventd-server  log        mysqld       systemd  utmp
 
 _Obs: os arquivos neste diretório variam de máquina para máquina._
 
-> ### **/sbin** - Arquivos binários de administração
->
-> Este diretório é semelhante ao diretório **bin**, contém varios arquivos executaveis, porém com uma diferença, esse executaveis só podem ser acessados e executados pelo **super usuário**.
+## **/sbin** - Arquivos binários de administração
+
+Este diretório é semelhante ao diretório **bin**, contém varios arquivos executaveis, porém com uma diferença, esse executaveis só podem ser acessados e executados pelo **super usuário**.
 
 Vamos dar uma olhada.
 
@@ -408,12 +403,12 @@ lucashe4rt@He4rt-PC:/sbin$ ls
 
 Todos esses arquivos que foram retornados com nosso comando de exibição podem somente ser acessados pelo **super usuário**.
 
-> ### **/srv** - Serviços de dados
->
-> Este diretório não é padrão entre os linux então não entraremos em detalhes mas basicamente dados de servidores e serviços em execução na máquina são armazenados aqui.
->
-> ### **/sys** - Sistema
->
+## **/srv** - Serviços de dados
+
+Este diretório não é padrão entre os linux então não entraremos em detalhes mas basicamente dados de servidores e serviços em execução na máquina são armazenados aqui.
+
+## **/sys** - Sistema
+
 > Aqui nos encontramos informações sobre nosso sistema operacional e sua execução
 > Vamos exibir seu conteúdo:
 
@@ -423,9 +418,9 @@ block  class  devices   fs          kernel  power
 bus    dev    firmware  hypervisor  module
 ```
 
-> ### **/tmp** - Arquivos temporários
->
-> Ele é um diretório com todas as permissões, ou seja, qualquer usuário pode entrar, criar, apagar e mover arquivos dentro deste diretório.
+## **/tmp** - Arquivos temporários
+
+Ele é um diretório com todas as permissões, ou seja, qualquer usuário pode entrar, criar, apagar e mover arquivos dentro deste diretório.
 
 ```console
 [17:03:51] lucashe4rt@He4rt-PC:/tmp$ ls
@@ -446,9 +441,9 @@ Este diretório armazena arquivos temporários, ou seja, após um período são 
 
 _Obs: quantidade de arquivos varia de máquina para máquina._
 
-> ### **/usr** - Dados de leitura
->
-> O diretório **usr** armazena aplicativos e arquivos utilizados pelos usuários, ao contrário de aplicativos e arquivos utilizados pelo sistema. Por exemplo, aplicativos não essenciais estão localizados dentro do diretório **/usr/bin** em vez do diretório **/bin**.
+## **/usr** - Dados de leitura
+
+O diretório **usr** armazena aplicativos e arquivos utilizados pelos usuários, ao contrário de aplicativos e arquivos utilizados pelo sistema. Por exemplo, aplicativos não essenciais estão localizados dentro do diretório **/usr/bin** em vez do diretório **/bin**.
 
 ```console
 lucashe4rt@He4rt-PC:/$ cd usr/
@@ -458,9 +453,9 @@ bin  include  lib  lib32  lib64  local  sbin  share  src
 
 _Obs: em essencia esses arquivos tem somente permissão de leitura._
 
-> ### **/var** - Arquivo de dados váriaveis
->
-> O objetivo desse diretório e guardar parte status das execuções atuais do nosso sistema
+## **/var** - Arquivo de dados váriaveis
+
+O objetivo desse diretório e guardar parte status das execuções atuais do nosso sistema
 
 ```console
 lucashe4rt@He4rt-PC:/$ cd var/

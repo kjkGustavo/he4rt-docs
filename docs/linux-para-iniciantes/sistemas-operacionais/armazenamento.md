@@ -3,8 +3,6 @@ id: linux-armazenamentos
 title: Armazenamento
 ---
 
-# Aonde estão os dados
-
 ## Boot
 
 Agora vamos falar um pouco sobre aonde estão os dados do seu Sistema. Vamos começar com o diretorio boot, ele é muito importante e geralmente fica em uma partição separada do disco, já que é la que fica o arquivo do Kernel, para acessar ele utlize o comando.
@@ -64,27 +62,27 @@ cd /var/log
 
 Por ultimo vamos falar sobre log, o linux mantem um sistema de log, aonde se mantem informação sobre o que aconteceu e o que esta acontecendo na maquina. E é aqui aonde os logs do sistema moram, e aqui nos temos um arquivo especial chamado dmesg, que é aonde se tem as mensagens do Kernel, se você der um CAT nele vai ver todas as informações da maquina desde quando ela foi ligada.
 
-# Processos
+## Processos
 
-## PID
+### PID
 
 Agora vamos nos aprofundar mais nos processos do Linux, mas antes de falar dos comandos que lidam com esses processos precisamos falar sobre o PID(Process ID), cada processo vai receber um numero de identificação unico, o primeiro processo init/systemd sempre terá o PID1. Para os outros o numero é incrementado quando mais processos vão sendo executados
 
-## User ID e GroupID
+### User ID e GroupID
 
 Um processo também sempre vai ter um UserID e um GroupID, os processos precisam ser executados com os privilégios de uma conta ou grpo associado a ele, isso é importante pois assim o sistema consegue determinar e gerenciar o acesso aos recursos.
 
-## Processo Pai
+### Processo Pai
 
 Todos processos menos o init/systemd são executados de forma recursiva, ou seja, possuem um processo pai que vai depender de outro processo e por ai vai. Caso o processo pai termine a execução antes do processo filho, o init/systemd vai "cuidar" do processo filho.
 
-## Sinais
+### Sinais
 
 Os sinais são utilizados pelo Kernel, processos ou usuários, para avisar um determinado processo sobre algum evento particular. Eles funcionam como uma "interrupção de software", e com isso os processos tomam alguma ação de acordo com o sinal recebido.
 
-# Comandos
+## Comandos
 
-## PS
+### PS
 
 ```shell
 ps

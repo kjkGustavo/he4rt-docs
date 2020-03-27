@@ -3,8 +3,6 @@ id: linux-componentes
 title: Componentes de um computador
 ---
 
-# Hardware
-
 Agora nos vamos falar sobre Hardware.
 
 ## CPUS

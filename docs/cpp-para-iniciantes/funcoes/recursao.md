@@ -13,7 +13,7 @@ Por que usar recursão? Legibilidade.
 Algumas soluções são mais fáceis de serem expressadas por recursão.
 Assim como outras são mais fáceis através de loops.
 
-# Exemplos
+## Exemplos
 
 ```cpp{0}
 #include <iostream>

@@ -13,7 +13,7 @@ Primeiramente,vamos falar dos <strong>Operadores Aritméticas</strong> e são, b
 | Divisão       |    /     |       int d = (8 / 6) / 2 |
 | Módulo        |    %     |             int e = 4 % 2 |
 
-# Exemplos
+## Exemplos
 
 ```cpp{0}
 #include <iostream>
@@ -82,7 +82,7 @@ int main ()
 
 - CPP é `Case-sensitive`,ou seja, `int a` é <strong>DIFERENTE</strong> de `int A`.
 
-# Operações com a biblioteca cmath
+## Operações com a biblioteca cmath
 
 O Cabeçalho `<cmath>` declara um conjunto de funções para calcular operações e transformações matemáticas comuns:
 

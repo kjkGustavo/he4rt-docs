@@ -1,9 +1,7 @@
 ---
 id: linux-redes
-title: Redes
+title: Linux Na Rede
 ---
-
-# Linux Na Rede
 
 ## Protocolo TCP/IP
 
@@ -39,13 +37,13 @@ Aqui trabalham os protocolos de transporte das informações, que é responsavel
 
 É nessa camada que os protocolos das aplicações vão trabalhar, como HTTP e etc. Esses protocolos de aplicações dependendo do tipo de comunição que precisam, vão fazer um uso de um protocolo de transporte melhor para as suas necessidades, vamos falar disso agora.
 
-# Camadas do TCP/IP
+## Camadas do TCP/IP
 
 ![TCP/IP](https://infotecnews.com.br/wp-content/uploads/2017/01/camada-tcpip-osi-1.jpg)
 
 Aqui estão as camadas do TCP/IP e os seus protocolos, vamos falar um pouco mais de cada um.
 
-## Rede
+### Rede
 
 - ETHERNET: Ethernet é uma arquitetura de interconexão pare redes locais, baseada no envio de pacotes. Ela define cabeamento e sinais elétricos para a camada física em formato de pacotes e protocolos para a subcamada de controle de acesso ao meio(MAC). Desde os anos 90 ela vem sendo a tecnologia de LAN mais amplamente utilizada e tem tomado grande parte do espaço de outros padrões de rede que vamos citar a seguir.
 
@@ -55,7 +53,7 @@ Aqui estão as camadas do TCP/IP e os seus protocolos, vamos falar um pouco mais
 
 - ATM: É projetado para unificar as telecomunicações e as redes de computadores. Ela foi projetada para uma rede que deve manipular tanto tráfego tradicional de dados de altas taxas de transferência, e conteúdo de baixa latência e de tempo real com voz e vídeo.
 
-## Internet
+### Internet
 
 - IP: É um protocolo de comunicação usado entre todas as máquinas em rede para encaminhamento de dados.
 
@@ -63,13 +61,13 @@ Aqui estão as camadas do TCP/IP e os seus protocolos, vamos falar um pouco mais
 
 - ICMP: É um protocolo integrande do Protocolo IP, é utilizado para fornecer relatórios de erros à fonte original. Qualquer computador que utilize IP precisa aceitar as mensagens ICMP e alterar o seu comportamento de acordo com o erro relatado. Os gateways devem estar programados para enviar mensagens ICMP quando receberem datagramas que provoquem algum erro.
 
-## Transporte
+### Transporte
 
 TCP: É um dos protocolos de comunicação, da camada de transporte, que dão suporte a rede global Internet, verificando se os dados são enviados na sequência correta e sem erros via rede. É complementado pelo protocolo da Internet, normalmente chamado de, TCP/IP.
 
 UDP: É um protocolo simples, ele é descrito na RFC 768 e permite que a aplicação envia um datagrama encapsulado num pacote IPv4 ou IPv6 a um destino, porém sem qualquer tipo de garantia que o pacote chegue corretamente(ou de qualquer modo). O protocolo UDP não é confiável, caso garantias sejam necessárias, é preciso implementar uma série de estrutura de controle, tais como timeouts, retransmissões, acknowledgments, controle de fluxo, etc.
 
-## Aplicação
+### Aplicação
 
 HTTP: É um protocolo de comunicação utilizado para sistemas de informação de hipermídia, distribuídos e colaboraticos. Ele é a base para a comunicação e dados na World Wide Web.
 
@@ -79,6 +77,8 @@ SMTP: É o protocolo padrão de envio de mensagens de emails através da Interne
 
 DNS: É um sistema hierárquico e distribuído de gestão de nomes para computadores, serviços ou qualquer máquina conectada à Internet ou a uma rede privada.
 
-<hr />
+---
 
-Isso é o basico que você precisa pelo menos conhecer sobr redes, se quer aprender mais recomendo o canal [Certificação Linux](https://www.youtube.com/user/ueribeiro/videos111111111)
+Isso é o basico que você precisa pelo menos conhecer sobr redes, se quer aprender mais recomendo o canal
+
+[Certificação Linux](https://www.youtube.com/user/ueribeiro/videos111111111)

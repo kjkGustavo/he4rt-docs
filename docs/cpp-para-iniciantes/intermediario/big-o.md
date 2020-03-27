@@ -7,7 +7,7 @@ Big O Notation é uma forma de classificar algoritmos baseado na relação entre
 
 Big O Notation não é exato, e o tempo que um algoritmo ou programa leva para ser executado, depende de vários fatores. Apesar disso, pode ser útil para entender por que algumas soluções são naturalmente mais lentas que outras, e para aproximar a performance de um algoritmo de forma rápida.
 
-# Tempo constante O(1)
+## Tempo constante O(1)
 
 Dizemos que uma operação leva tempo constante quando independente do input, ela leva a mesma quantidade de tempo ou a diferença não é grande o suficiente para importar.
 
@@ -42,7 +42,7 @@ int main()
 }
 ```
 
-# Tempo logaritmico O(log n)
+## Tempo logaritmico O(log n)
 
 Um exemplo de um algoritmo que leva O(log n) é binary search.
 
@@ -67,7 +67,7 @@ int binary_search(std::vector<int> const &array, int start, int end, int element
 
 Esse algoritmo leva O(log n) por que a cada chamada da função binary_search, o campo de busca é cortado pela metade.
 
-# Tempo linear O(n)
+## Tempo linear O(n)
 
 Em um algoritmo O(n) o tempo de execução aumenta de forma idêntica ao tamanho do input, ou seja, de forma linear.
 
@@ -96,7 +96,7 @@ int main()
 }
 ```
 
-# O(n log n)
+## O(n log n)
 
 Um exemplo de algoritmo O(n log n) é o famoso quicksort, usado para ordenar vetores.
 
@@ -125,7 +125,7 @@ void quicksort(std::vector<int>& array, int start, int end)
 O(n log n) é o tempo médio que um quicksort leva, mas isso não é uma regra,
 um quicksort pode levar O(n²) no pior dos casos e O(n) no melhor.
 
-# Tempo quadrático O(n²)
+## Tempo quadrático O(n²)
 
 Em um algoritmo O(n²) o tempo de execução aumenta de forma quadrática.
 

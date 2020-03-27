@@ -3,22 +3,11 @@ id: linux-manipulacao
 title: Manipulação de permissões
 ---
 
-# 03 - Manipulação de permissões
-
-## Contéudo do artigo
-
-[Donos, grupos e usuários](#donos)<br>
-[Tipos de permissão]()<br>
-[Referências](#Referências)<br>
-[Autores](#Autores)
-
----
-
 As permissões dentro de um sistema Linux protegem os arquivos e diretórios do acesso indeviduo ou não autorizado de algum usuário. São as permissões que impedem que algum software malicioso cause estragos no nosso sistema. Vamos entender algumas coisas sobre permissões.
 
-> ### <span id="donos"> Donos, Grupos e usuários </span>
->
-> O princípio da segurança do nosso sistema de arquivos Linux é definir o acesso aos arquivos por donos, grupos e usuários.
+## Donos, Grupos e usuários
+
+O princípio da segurança do nosso sistema de arquivos Linux é definir o acesso aos arquivos por donos, grupos e usuários.
 
 - **Dono**
 
@@ -31,9 +20,9 @@ As permissões dentro de um sistema Linux protegem os arquivos e diretórios do 
 - **Outro usuários**
   - Usuários que não são donos ou não pertecem ao grupo do arquivo/diretório.
 
-> ### Tipos de permissão
->
-> Dentro do sistema linux nós temos 3 tipos de permissões básicas:
+## Tipos de permissão
+
+Dentro do sistema linux nós temos 3 tipos de permissões básicas:
 
 | Permissão | Descrição                                                                                               |
 | --------- | ------------------------------------------------------------------------------------------------------- |
@@ -64,9 +53,9 @@ Da esquerda pra direita nós temos as permissões do **dono**, **grupo** e outro
 
 Desta maneira podemos entender que o **dono** tem acesso total ao diretório, o **grupo** tem acesso de _leitura_ e _acesso_ (acesso pois é um diretório), e **outros usuários** também tem permissão de _leitura_ e _acesso_.
 
-> ### Etapas para o acesso ao arquivo/diretório
->
-> Para o acesso a um arquivo ou diretório da seguinte forma:
+### Etapas para o acesso ao arquivo/diretório
+
+Para o acesso a um arquivo ou diretório da seguinte forma:
 
 1. Verifica-se primeiro se o usuário que está acessará o arquivo é o dono, caso seja as permissões destinadas ao dono são aplicadas.
 
@@ -74,9 +63,9 @@ Desta maneira podemos entender que o **dono** tem acesso total ao diretório, o 
 
 3. Se não pertencer ao grupo é verificado as permissões de acesso para os outros usuários e aplicadas.
 
-> ### Alterar permissões
->
-> Alterar permissões de acesso a um arquivo ou diretório é bem simples, basta usar o comando `chmod`.
+### Alterar permissões
+
+Alterar permissões de acesso a um arquivo ou diretório é bem simples, basta usar o comando `chmod`.
 
 Sintaxe
 
@@ -96,7 +85,7 @@ lucashe4rt@He4rt-PC:~$ ls -l arquivo.txt
 
 Como podemos perceber a permissão de execução daquele arquivo foi concedida ao grupo no qual o arquivo pertence.
 
-#### Permissões octal
+### Permissões octal
 
 Nós também podemos alterar as permissões de acesso utilizando o modo octal, que é um conjunto de oito números onde cada número define um tipo de acesso diferente, ao invés de utilizar +x, -x, etc.
 
@@ -123,9 +112,9 @@ lucashe4rt@He4rt-PC:~$ ls -l
 
 O primeiro número é destinado ao dono, o segundo ao grupo e o terceiro aos outros usuários, logo nesse exemplo nós demos todas as permissões ao dono, nenhuma ao grupo e execução para outros usuários.
 
-> ### Alterar dono ou grupo
->
-> Para alterarmos o dono ou grupo do arquivo/diretório também é bem simples! Nós utilizamos o comando `chown` para esta ação.
+### Alterar dono ou grupo
+
+Para alterarmos o dono ou grupo do arquivo/diretório também é bem simples! Nós utilizamos o comando `chown` para esta ação.
 
 Sintaxe
 
@@ -169,7 +158,3 @@ lucashe4rt@He4rt-PC:~$ ls -l
 ## Referências
 
 [IFRN - Linux 04](https://docente.ifrn.edu.br/filiperaulino/disciplinas/introducao-a-sistemas-abertos/aulas/)
-
-## Autores
-
-- **Lucas Silva (LucasHe4rt)** - _Back-end Developer & Member of He4rt Developers_ - [Twitter](https://twitter.com/lucashe4rt)

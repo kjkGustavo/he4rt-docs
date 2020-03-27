@@ -11,7 +11,7 @@ Em C++, o acesso direto à memória não é permitido. Em vez disso, acessamos a
 
 Objetos podem ser nomeados ou não nomeados. Um objeto nomeado é chamado de variável e o nome do objeto é chamado de identificador. Em nossos programas, a maioria dos objetos que criamos serão variáveis.
 
-# Tipos
+## Tipos
 
 - CPP é uma linguagem fortemente tipada:
 
@@ -52,7 +52,7 @@ Em tempo de compilação, quando o compilador vê esta declaração, ele faz uma
 
 Quando o programa é executado (chamado runtime), a variável será instanciada. A instanciação é uma palavra sofisticada que significa que o objeto será criado e atribuído a um endereço de memória. As variáveis devem ser instanciadas antes de poderem ser usadas para armazenar valores. Por exemplo, digamos que a variável `inteiro` é instanciada no local da memória 23. Sempre que o programa usar a variável `inteiro`, ele acessará o valor no local da memória 23. Um objeto instanciado às vezes também é chamado de instância. Na seção de ponteiros iremos aprender a manipular diretamente pelo endereço de memória.
 
-# Curiosidades
+## Curiosidades
 
 ```cpp{0}
 int main ()

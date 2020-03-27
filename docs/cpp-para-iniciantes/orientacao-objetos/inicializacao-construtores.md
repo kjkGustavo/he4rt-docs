@@ -97,11 +97,11 @@ public:
 }
 ```
 
-# Construtores com funcionalidade sobreposta
+## Construtores com funcionalidade sobreposta
 
 Quando você instancia um novo objeto, o construtor do objeto é chamado implicitamente pelo compilador C ++. Não é incomum ter uma classe com vários construtores com funcionalidade sobreposta.
 
-# Delegando construtores em C++11 >
+## Delegando construtores em C++11 >
 
 A partir do C ++ 11, os construtores agora podem chamar outros construtores. Esse processo é chamado de delegação de construtores (ou encadeamento de construtores).
 

@@ -33,7 +33,7 @@ O que fizemos foi:
 
 Indicar que existe uma função `ExibirNome`, sendo um `protótipo`, e apos a função main executar sua lógica.
 
-# `#define`
+## `#define`
 
 Podemos por meio do `#define` indicar algo a ser substituido antes de ser executado
 

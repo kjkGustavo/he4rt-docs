@@ -3,8 +3,6 @@ id: linux-condutores
 title: Condutores de Redirecionamentos
 ---
 
-# Condutores de Redirecionamentos
-
 Existem conceitos no Linux muito importantes, agora vamos falar um pouco sobre cada um.
 
 ## Entrada Padrão
@@ -19,7 +17,7 @@ A saida padrão é tudo aquilo que o programa devolve, tudo que processa, coloca
 
 A saida de erro é uma saida especial, o programa pode fazer uma separação entre a saida padrão e a saida de erro, para saber quando mostrar um erro e quando mostrar o conteudo.
 
-<hr />
+---
 
 Se você executar o comando abaixo podera ver os 3 conceitos em forma de dispositivos.
 
@@ -35,9 +33,9 @@ mysql -uroot -psenha -d banco < sql.txt
 
 Acima nos temos um exemplo de uma entrada padrão, para usar o MySql. Os comandos como ls e etc são uma saida padrão.
 
-<hr />
+---
 
-# Expressões Regulares
+## Expressões Regulares
 
 Uma expressão regular é um método formal de se especificar um padrão de texto a ser procurado em um ou mais arquivos.
 
@@ -52,14 +50,14 @@ Geralmente elas são usadas para buscar ou validar texto de coisas como:
 
 Agora vou resumir um pouco a diferença entre os comandos Grep, Egrep e Fgrep.
 
-## Grep
+### Grep
 
 Pode ser utilizado para procurar expressões regulares simples .
 
-## Egrep
+### Egrep
 
 Pode ser utilizado para procurar expressões regulares simples e avançadas.
 
-## Fgrep
+### Fgrep
 
 Não pode ser usado para procurar expressões regulares, ele serve para fazer busca literais, ele é muito mais rapido se você estiver buscando alguma coisa que não usa expressões regulares.

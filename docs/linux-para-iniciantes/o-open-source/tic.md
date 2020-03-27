@@ -3,8 +3,6 @@ id: linux-tic
 title: Tecnologias Da Informação e Comunicação
 ---
 
-# Tecnologias Da Informação e Comunicação(Tic)
-
 Diferente do que muitas pessoas pensam, até esse ponto você já deve saber que o Linux apesar de ser muito bom para servidores não é usado apenas para isso, já que também pode ser um desktop muito poderoso e com diversas opções de uso. Agroa vamos vamos um pouco mais sobre as famosas Switchs de programas, começando pelo querido Gnome.
 
 ## Gnome
@@ -43,14 +41,14 @@ Agora nos temos o XFCE, que é um dos mais leves e rapidos, geralmente usado em 
 
 É bom lembrar que não existem apenas GNOME, KDE e XFCE, esses são os mais famosos, abaixo vou deixar alguns prints de distribuições para você poder escolher a que mais te agrada.
 
-### OpenSuse com KDE
+## OpenSuse com KDE
 
 ![Suse](https://i.ytimg.com/vi/9hUHjQhY9is/maxresdefault.jpg)
 
-### Ubuntu
+## Ubuntu
 
 ![Ubuntu](https://cdn.arstechnica.net/wp-content/uploads/2018/05/ubuntu1804-files.jpeg)
 
-### Linux mint com XFCE
+## Linux mint com XFCE
 
 ![MINT](https://linuxmint-installation-guide.readthedocs.io/pt_BR/latest/_images/cinnamon.png)

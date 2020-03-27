@@ -3,8 +3,6 @@ id: linux-scripts
 title: Scripts no Linux
 ---
 
-# Criando pequenos Scripts no Linux
-
 ## Diretiva
 
 A primeira característica de um script é a diretiva #!, que indica qual é o interpretador que será usado para ler e interpretar o script.
@@ -31,51 +29,59 @@ do shell pai(chamou o script) e o shell filho(executa o script). A herança é u
 
 Variáveis especiais que podem ser utilizadas:
 
-\$0: Retorna o nome do script que está sendo executado;
+```
+`\$0`: Retorna o nome do script que está sendo executado;
+```
 
+```
 $1-$9: Retorna os parâmetros passados na linha de comando;
+```
 
+```
 \$#: Retorna o número de parâmetros passados;
+```
 
+```
 \$?: Recupera o valor de retorno do último comando;
+```
 
-$$
-## Test
+## Comandos
+
+### Test
 
 O comando test é uma ferramenta para testar arquivos, permissões, números, etc. Ele pode testar diversas condições, fornecendo o resultado através da variável de retorno.
 
-## If test
+### If test
 
 O comando if serve para executar algo SE determinada condição for satisfeita. Mas, diferente da maioria das linguagens como JavaScript, Java, Php, etc o if testa um comando e não uma condição. Para testar condições devemos utilizar o comando test junto com o if. Os colchetes podem usar usados no lugar do comando test. Abaixo algumas condições possíveis:
 
-* -eq Igual
-* != Diferente
-* -gt Maior
-* -lt Menor
-* -d Se o arquivo for um diretório
-* -e Se existir o arquivo
-* -z Se o arquivo estiver vazio
-* -f Se o arquivo contiver algum text
-* -o Se o usuário for o dono do arquivo
-* -r Se o arquivo pode ser lido
-* -w Se o arquivo pode ser alterado
-* -x Se o arquico pode ser executado
+- -eq Igual
+- != Diferente
+- -gt Maior
+- -lt Menor
+- -d Se o arquivo for um diretório
+- -e Se existir o arquivo
+- -z Se o arquivo estiver vazio
+- -f Se o arquivo contiver algum text
+- -o Se o usuário for o dono do arquivo
+- -r Se o arquivo pode ser lido
+- -w Se o arquivo pode ser alterado
+- -x Se o arquico pode ser executado
 
-## for
+### for
 
 O comando for permite que laços sejam executados, até que uma determinida variável percorra todos os valores de uma dada lista.
 
-## while
+### while
 
 O while testa uma expressão até que ela se torne falsa.
 
-<hr />
+---
 
 Isso é o basico do ShellScript, uma ferramenta muito poderosa que podemos usar no nosso Pinguim. Se você se interessou e quer virar um Ninja do ShellScript eu recomendo o [Canal do professor Uirá Ribeiro](https://www.youtube.com/user/ueribeiro/videos), e em breve vamos trazer mais conteudos mostrando exemplos praticos de como usar o ShellScript no dia a dia.
 
+## Refêrencias
 
-# Refêrencias
+[Certificação Linux](https://www.youtube.com/user/ueribeiro/videos)
 
-https://www.youtube.com/user/ueribeiro/videos
-https://www.youtube.com/user/bosontreinamentos
-$$
+[Bóson Treinamentos](https://www.youtube.com/user/bosontreinamentos)

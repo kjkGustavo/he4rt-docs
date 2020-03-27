@@ -3,34 +3,19 @@ id: linux-comandos
 title: Comandos básicos no terminal
 ---
 
-# 02 - Comandos básicos
+## cd
 
-## Contéudo do artigo
-
-[cd](#cd)<br>
-[ls](#ls)<br>
-[df](#df)<br>
-[cat](#cat)<br>
-[ps](#ps)<br>
-[kill](#kill)<br>
-[Referências](#Referências)<br>
-[Autores](#Autores)
-
----
-
-> ## cd
->
-> O comando `cd` é um acrônimo para "change directory" e serve para navegar do diretório atual para outro especificado em seguida.
+O comando `cd` é um acrônimo para "change directory" e serve para navegar do diretório atual para outro especificado em seguida.
 
 Sintaxe:
 
-```console
+```bash
 cd [diretório]
 ```
 
 Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ cd /
 ```
 
@@ -38,17 +23,17 @@ lucashe4rt@He4rt:~$ cd /
 
 Resultado:
 
-```console
+```bash
 lucashe4rt@He4rt:/$
 ```
 
-> ## ls
->
-> Com o comando `ls` podemos visualizar o conteúdo de um diretório e também informações sobre arquivos, informando dados como nomes de arquivos, permissões, proprietários e datas de criação, além de inúmeras opções para exibir as informações de diversas formas.
+## ls
+
+Com o comando `ls` podemos visualizar o conteúdo de um diretório e também informações sobre arquivos, informando dados como nomes de arquivos, permissões, proprietários e datas de criação, além de inúmeras opções para exibir as informações de diversas formas.
 
 Sintaxe:
 
-```console
+```bash
 ls [opções]
 ```
 
@@ -56,7 +41,7 @@ Algumas opções do `ls`:
 
 - `-a` - Mostra todos os arquivos, incluindo os ocultos. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ ls -a
 .                .bashrc     .java               .themes     Downloads
 ..               .cache      .local              .viminfo    Games
@@ -71,7 +56,7 @@ lucashe4rt@He4rt:~$ ls -a
 
 - `-A` - Semelhante ao `-a`, mas não mostra o diretório corrente (`.`) ou o diretório acima (`..`). Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ ls -A
 .ICEauthority    .config     .mozilla            .vscode     Games-Wine
 .PhpStorm2019.3  .eclipse    .mysql_history      .wget-hsts  Images
@@ -86,7 +71,7 @@ lucashe4rt@He4rt:~$ ls -A
 
 - `-i` - Mostra o número do inode de cada arquivo na primeira coluna. Exemplo:
 
-```console
+```bash
 1195906 Desktop     660779 Games        396790 aur
 1319602 Documents  2630465 Games-Wine  2890994 go
 1200375 Downloads  1314860 Images
@@ -94,7 +79,7 @@ lucashe4rt@He4rt:~$ ls -A
 
 - `-l` - Formato longo, mostra permissões, número de links, propietário, grupo, tamanho, data de modificação e nome do arquivo. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ ls -l
 total 1032
 drwxrwxr-x  2 lucashe4rt lucashe4rt    4096 Feb 23 11:57 Desktop
@@ -109,14 +94,14 @@ drwxr-xr-x  3 lucashe4rt lucashe4rt    4096 Feb 29 16:37 go
 
 - `-m` - Arquivos listados em sequência, separados por vírgula. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ ls -m
 Desktop, Documents, Downloads, Games, Games-Wine, Images, aur, go
 ```
 
 - `-n` - Semelhante ao `-l`, porém mostra UID E GID Em vez de nomes de proprietário e grupo. Exemplo:
 
-```console
+```bash
 [23:42:15] lucashe4rt@He4rt:~$ ls -n
 total 36
 drwxrwxr-x  2 1000 1000 4096 Feb 23 11:57 Desktop
@@ -131,7 +116,7 @@ drwxr-xr-x  3 1000 1000 4096 Feb 29 16:37 go
 
 - `-o` - Semelhante ao `-l`, porém não mostra o grupo do arquivo. Exemplo:
 
-```console
+```bash
 total 36
 drwxrwxr-x  2 lucashe4rt 4096 Feb 23 11:57 Desktop
 drwxr-xr-x 13 lucashe4rt 4096 Feb 29 23:38 Documents
@@ -145,33 +130,33 @@ drwxr-xr-x  3 lucashe4rt 4096 Feb 29 16:37 go
 
 - `-p` - Mostra uma barra(/) na frente de nomes de diretórios. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ ls -p
 Desktop/  Documents/  Downloads/  Games/  Games-Wine/  Images/  aur/  go/
 ```
 
 - `-r` - Ordem reversa. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ ls -r
 go  aur  Images  Games-Wine  Games  Downloads  Documents  Desktop
 ```
 
 _Nós também podemos juntar os comandos, por exemplo `ls -la`_.
 
-> ## df
->
-> O comando `df` mostra o espaço livre/ocupado de cada partição. Pode ser utilizado junto com várias opções, se for utilizado sozinho, mostrará o espaço usado e disponível de todos os sistemas de arquivos atualmente montados.
+## df
+
+O comando `df` mostra o espaço livre/ocupado de cada partição. Pode ser utilizado junto com várias opções, se for utilizado sozinho, mostrará o espaço usado e disponível de todos os sistemas de arquivos atualmente montados.
 
 Sintaxe:
 
-```console
+```bash
 df [opções]
 ```
 
 Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ df
 Filesystem     1K-blocks     Used Available Use% Mounted on
 dev              4028428        0   4028428   0% /dev
@@ -187,7 +172,7 @@ Algumas opções do `df`:
 
 - `-a` - Inclui sistema de arquivos com 0 (zero) blocos. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ df -a
 Filesystem     1K-blocks     Used Available Use% Mounted on
 proc                   0        0         0    - /proc
@@ -225,7 +210,7 @@ tmpfs             807364       12    807352   1% /run/user/1001
 
 - `-h` - Mostra o espaço livre/ocupado em MB, KB, GB em vez de bloco. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 dev             3.9G     0  3.9G   0% /dev
@@ -239,7 +224,7 @@ tmpfs           789M   12K  789M   1% /run/user/1001
 
 - `-k` - Lista em Kbyts. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ df -k
 Filesystem     1K-blocks     Used Available Use% Mounted on
 dev              4028428        0   4028428   0% /dev
@@ -253,7 +238,7 @@ tmpfs             807364       12    807352   1% /run/user/1001
 
 - `-l` - Somente lista sistema de arquivos locais. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ df -l
 Filesystem     1K-blocks     Used Available Use% Mounted on
 dev              4028428        0   4028428   0% /dev
@@ -267,7 +252,7 @@ tmpfs             807364       12    807352   1% /run/user/1001
 
 - `-m` - Lista em Mbytes. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ df -m
 Filesystem     1M-blocks  Used Available Use% Mounted on
 dev                 3935     0      3935   0% /dev
@@ -281,7 +266,7 @@ tmpfs                789     1       789   1% /run/user/1001
 
 - `-T` - Lista o tipo de sistema de arquivos de cada partição. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt:~$ df -T
 Filesystem     Type     1K-blocks     Used Available Use% Mounted on
 dev            devtmpfs   4028428        0   4028428   0% /dev
@@ -293,19 +278,19 @@ tmpfs          tmpfs      4036824      116   4036708   1% /tmp
 tmpfs          tmpfs       807364       12    807352   1% /run/user/1001
 ```
 
-> ## cat
->
-> O comando `cat`, derivação da palavra concatenate, permite que a gente crie, una e exiba arquivos no formato padrão de tela ou em outro arquivo, entre outras funcionalidades.
+## cat
+
+O comando `cat`, derivação da palavra concatenate, permite que a gente crie, una e exiba arquivos no formato padrão de tela ou em outro arquivo, entre outras funcionalidades.
 
 Sintaxe:
 
-```console
+```bash
 cat [opção] [arquivo]
 ```
 
 Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ cat arquivo.txt
 da estrela ai se vc ta curtindo
 manda pros amigo tb
@@ -316,7 +301,7 @@ Algumas opções do comando `cat`:
 
 - `-E` - Marca o término de linha mostrando o caractere **\$** ao final de cada uma delas. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ cat -E arquivo.txt
 da estrela ai se vc ta curtindo$
 manda pros amigo tb$
@@ -325,7 +310,7 @@ vc é d+++$
 
 - `-n` - Mostra a quantidade de linas do arquivo. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ cat -n arquivo.txt
      1	da estrela ai se vc ta curtindo
      2	manda pros amigo tb
@@ -334,7 +319,7 @@ lucashe4rt@He4rt-PC:~$ cat -n arquivo.txt
 
 - `-v` - Exibe caracteres não exibíveis. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ cat -v arquivo.txt
 da estrela ai se vc ta curtindo
 manda pros amigo tb
@@ -343,7 +328,7 @@ vc M-CM-) d+++
 
 - `-T` - Exibe tabulação mostradas como **^I**. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ cat -T arquivo.txt
 da estrela ai se vc ta curtindo
 manda pros amigo tb
@@ -360,7 +345,7 @@ vc é d+++
 
 - `-s` - Remove linhas repetidas em branco. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ cat -s arquivo.txt
 da estrela ai se vc ta curtindo
 manda pros amigo tb
@@ -376,7 +361,7 @@ _Obs: essa opção mantém uma linha vazia e remove as linhas repetidas em branc
 
 - `-b` - Numera as linhas que possuem algum conteúdo. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ cat -b arquivo.txt
      1	da estrela ai se vc ta curtindo
      2	manda pros amigo tb
@@ -395,7 +380,7 @@ _Obs: essa opção sobrescreve a opção `-n`._
 
 - `tac` - Exibe o conteúdo do arquivo em ordem contrária, da primeira à ultima linha. Exemplo:
 
-```console
+```bash
 twitter: @He4rtDevs
 
 	no
@@ -409,19 +394,19 @@ manda pros amigo tb
 da estrela ai se vc ta curtindo
 ```
 
-> ## ps
->
-> O comando `ps` exibe informações sobre os processos que estão executando na máquina.
+## ps
+
+O comando `ps` exibe informações sobre os processos que estão executando na máquina.
 
 Sintaxe:
 
-```console
+```bash
 ps [opções]
 ```
 
 Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ ps
     PID TTY          TIME CMD
   14461 pts/0    00:00:00 bash
@@ -432,7 +417,7 @@ Algumas opções do comando `ps`:
 
 - `-a` - Mostra os processos de todos os usuários. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ ps -a
     PID TTY          TIME CMD
   14631 pts/0    00:00:00 ps
@@ -440,7 +425,7 @@ lucashe4rt@He4rt-PC:~$ ps -a
 
 - `-A` ou `-e` - Mostra todos os processos. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ ps -e
     PID TTY          TIME CMD
       1 ?        00:00:01 systemd
@@ -474,7 +459,7 @@ _obs: eu removi alguns processos para o exemplo não tomar um espaço muito gran
 
 - `-f` - Mostra a árvore de execução de comandos. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ ps -f
 UID          PID    PPID  C STIME TTY          TIME CMD
 lucashe+   14461   14455  0 11:10 pts/0    00:00:00 bash
@@ -483,7 +468,7 @@ lucashe+   14959   14461  0 11:17 pts/0    00:00:00 ps -f
 
 - `-g [grupo]` - Mostra os processos de um determinado grupo. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ ps -g lucashe4rt
     PID TTY          TIME CMD
     607 ?        00:00:00 systemd
@@ -524,7 +509,7 @@ lucashe4rt@He4rt-PC:~$ ps -g lucashe4rt
 
 - `-x` - Mostra os processos que não foram iniciados no console. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ ps -x
     PID TTY      STAT   TIME COMMAND
     607 ?        Ss     0:00 /usr/lib/systemd/systemd --user
@@ -566,7 +551,7 @@ lucashe4rt@He4rt-PC:~$ ps -x
 
 - `-u` - Fornece o nome do usuário e a hora de início do processo. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ ps -u
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 lucashe+   14461  0.0  0.0   4376  3804 pts/0    Ss   11:10   0:00 bash
@@ -581,25 +566,25 @@ Se estiver difícil de encontrar um processo, você pode utilizar o **ps** junto
 
 Como por exemplo quereremos encontar o processo do _firefox_, então usariamos:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ ps aux| grep firefox
     PID TTY          TIME CMD
       6 ?        00:00:00 /usr/lib/firefox/firefox
 ```
 
-> ## kill
->
-> O comando `kill` serve para matarmos processos, ou seja, finalizar tarefas dentro do nosso sistema operacional.
+## kill
+
+O comando `kill` serve para matarmos processos, ou seja, finalizar tarefas dentro do nosso sistema operacional.
 
 Sintaxe:
 
-```console
+```bash
 kill [opções] pid
 ```
 
 Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ kill 962
 lucashe4rt@He4rt-PC:~$
 ```
@@ -610,14 +595,14 @@ Algumas vertentes do comando `kill`:
 
 - `pkill` - Especificamos o nome do processo ou um padrão para encontrar o processo. Exemplo:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ pkill firefox
 lucashe4rt@He4rt-PC:~$
 ```
 
 ou
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ pkill fire
 lucashe4rt@He4rt-PC:~$
 ```
@@ -626,7 +611,7 @@ _Obs: este comando pode encerrar o processo errado, principalmente se exitem vá
 
 - `killall` - Pode encerrar o processo pelo nome porém só funciona com o nome exato do processo e não com o nome parcial, assim, sendo mais seguro que o `pkill`.
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ killall Discord
 lucashe4rt@He4rt-PC:~$
 ```
@@ -635,7 +620,7 @@ lucashe4rt@He4rt-PC:~$
 
 Muitas vezes não conseguimos matar o processo quando o programa trava e para termos certeza de que conseguiremos finalizá-lo, forçando a finalização, podemos usar o modificador -9 para o comando kill da seguinte forma:
 
-```console
+```bash
 lucashe4rt@He4rt-PC:~$ kill -9 13421
 lucashe4rt@He4rt-PC:~$
 ```
@@ -659,9 +644,3 @@ A diferença para do kill com e sem o modificador -9 é simples: sem o modificad
 [Guia Linux - ps](http://guialinux.uniriotec.br/ps/)
 
 [Hostinger - comando kill linux](https://www.hostinger.com.br/tutoriais/comando-kill-linux/)
-
-## Autores
-
-- **Lucas Silva (LucasHe4rt)** - _Back-end Developer & Member of He4rt Developers_ - [Twitter](https://twitter.com/lucashe4rt)
-
-* **Marco Antonio (Specko)** - _Back-end Developer & Member of He4rt Developers_ - [Twitter](https://twitter.com/lolgamarco2)

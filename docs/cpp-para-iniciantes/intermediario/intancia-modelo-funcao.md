@@ -34,7 +34,7 @@ const int& max(const int &foo, const int &bar)
 
 Ele irá identificar o tipo de retorno e dos parâmetros para criar a função
 
-# Operadores, chamadas de função e modelos de função
+## Operadores, chamadas de função e modelos de função
 
 As funções de modelo funcionarão com os tipos internos (por exemplo, char, int, double, etc ...) e classes, com uma ressalva. Quando o compilador compila a instância do modelo, ele a compila exatamente como uma função normal. Em uma função normal, todos os operadores ou chamadas de função que você usa com seus tipos devem ser definidos ou você receberá um erro do compilador. Da mesma forma, quaisquer operadores ou chamadas de função na função de modelo devem ser definidos para quaisquer tipos para os quais o modelo de função é instanciado. Vamos dar uma olhada nisso com mais detalhes.
 

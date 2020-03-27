@@ -15,7 +15,7 @@ Cada conjunto de dígitos binários é interpretado pela CPU em um comando para 
 
 Para resolver as questões de legibilidade e portabilidade, novas linguagens de programação, como C, C ++, Pascal (e mais tarde, linguagens como Java, Javascript e Perl) foram desenvolvidas. Essas linguagens são chamadas de linguagens de alto nível, pois são projetadas para permitir que o programador escreva programas sem ter que se preocupar com o tipo de computador no qual o programa será executado.
 
-# O que é C++?
+## O que é C++?
 
 C++ (pronunciado como C plus plus) foi desenvolvido por Bjarne Stroustrup no Bell Labs como uma extensão para C, começando em 1979. C++ adiciona muitos recursos à linguagem C, e pode ser considerado um "superconjunto" do C.
 

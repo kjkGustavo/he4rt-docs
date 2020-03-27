@@ -1,22 +1,11 @@
 ---
 id: linux-grupos
-title: Grupos
+title: Gerenciamento de usuários e grupos
 ---
 
-# 02 - Gerenciamento de usuários e grupos
+## Gerenciamento de usuários
 
-## Contéudo do artigo
-
-[Gerenciamento de usuários](#usuarios)<br>
-[Gerenciamento de grupos](#grupos)<br>
-[Referências](#Referências)<br>
-[Autores](#Autores)
-
----
-
-> <h3 id="usuarios"> Gerenciamento de usuários </h3>
-
-#### Adicionar
+### Adicionar
 
 Criar um usuário novo no Linux é bem simples, apenas é necessário o comando `useradd` e indicar o nome do novo usuário.
 
@@ -48,7 +37,7 @@ Exemplo usando as opções **-d** e **-s**.
 lucashe4rt@He4rt-PC:~$ sudo useradd -d /home/he4rtdevs -s /bin/bash he4rtdevs
 ```
 
-#### Alterar
+### Alterar
 
 Para alterarmos uma conta de usuário basta apenas utilizarmos o comando `usermod`.
 
@@ -78,7 +67,7 @@ Algumas opções
 | -s _shell_                | altera o shell do usuário.                                                                               |
 | -u _uid_                  | altera o número de **UID** do usuário                                                                    |
 
-#### Remover
+### Remover
 
 Para removermos um usuário utilizamos o comando `userdel`.
 
@@ -101,7 +90,7 @@ Algumas opções
 | -h    | exibe as opções do comando             |
 | -r    | deleta a home e todos os seus arquivos |
 
-#### Senha
+### Senha
 
 Para congfigurarmos ou alteramos a senha de um usuário utilizamos o comando `passwd`.
 
@@ -132,9 +121,9 @@ Algumas opções
 | -S        | Exibe o status da conta.                                                                               |
 | -a        | Usada em conjunto com a opção -S mostra o status das contas de todos os usuários.                      |
 
-> <h3 id="grupos"> Gerenciamento de grupos </h3>
+## Gerenciamento de grupos
 
-#### Adicionar
+### Adicionar
 
 Para criarmos um novo grupo utilizamos o comando `groupadd`.
 
@@ -157,7 +146,7 @@ Algumas opções
 | -g _GID_ | especifica o **GID** do novo grupo (Utilize valores maiores que 500 e que não estejam sendo usados). |
 | -o _GID_ | atribui um **GID** já utilizado por outro grupo.                                                     |
 
-#### Mudar de grupo
+### Mudar de grupo
 
 Pode ocorrer que um usuário pertença a varios grupos, porém, todas as ações feitas por um usuário são associadas ao seu **UID** E **GID** primários e para mudarmos temporaria mente o grupo principal utiliza-se o comando `newgrp`.
 
@@ -174,7 +163,7 @@ Exemplo
 lucashe4rt@He4rt-PC:~$ sudo newgrp noobs
 ```
 
-#### Remover
+### Remover
 
 Para removermos um grupo utilizamos o comando `groupdel`
 Sintaxe
@@ -189,7 +178,7 @@ Exemplo
 lucashe4rt@He4rt-PC:~$ sudo groupdel noobs
 ```
 
-## _Obs: Não se deve remover o grupo primário de um grupo de usuários existentes. Deve-se antes remover os usuários, para então remover o grupo._
+> _Obs: Não se deve remover o grupo primário de um grupo de usuários existentes. Deve-se antes remover os usuários, para então remover o grupo._
 
 ## Referências
 
@@ -198,7 +187,3 @@ lucashe4rt@He4rt-PC:~$ sudo groupdel noobs
 [Guia Linux - userdel](http://guialinux.uniriotec.br/userdel/)<br>
 [Bóson treinamentos - comando passwd](http://www.bosontreinamentos.com.br/linux/38-gerenciamento-de-usuarios-e-grupos-05-alterar-senhas-comando-passwd/)<br>
 [Viva o Linux - Fundamentos do sistema Linux - usuários e grupos](https://www.vivaolinux.com.br/artigo/Fundamentos-do-sistema-Linux-usuarios-e-grupos/?pagina=4)
-
-## Autores
-
-- **Lucas Silva (LucasHe4rt)** - _Back-end Developer & Member of He4rt Developers_ - [Twitter](https://twitter.com/lucashe4rt)

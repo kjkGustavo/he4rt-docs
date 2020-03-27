@@ -3,23 +3,11 @@ id: linux-usuario
 title: Usuários
 ---
 
-# 01 - Usuários
-
-## Contéudo do artigo
-
-[passwd](#passwd)<br>
-[Tipos de usuários](#tipos)<br>
-[Grupos](#grupos)<br>
-[Referências](#Referências)<br>
-[Autores](#Autores)
-
----
-
 O Linux é um sistema operacional multi-usuário, ou seja, ele pode ter mais de um usuário conectado ao mesmo tempo e cada um pode se conectar mais de uma vez num mesmo momento. Neste artigo vamos entender alguns conceitos sobre o arquivo _passwd_, _tipos de usuários_ e _grupos_.
 
-> ### passwd
->
-> O arquivo passwd é onde estão armazenadas as principais informações sobre todos os usuários em um sistema Linux. Cada linha desse arquivo é o registro de um usuário do sistema.
+## passwd
+
+O arquivo passwd é onde estão armazenadas as principais informações sobre todos os usuários em um sistema Linux. Cada linha desse arquivo é o registro de um usuário do sistema.
 
 _Esse arquivo esta localizado em `/etc/passwd`._
 
@@ -70,17 +58,17 @@ Podemos observar que esta linha contém vários campos separados por dois pontos
 - **/home/lucashe4rt** - diretório base, _home_, do usuário.
 - **/bin/bash** - shell padrão.
 
-> <h3 id="tipos"> Tipos de usuários </h3>
+## Tipos de usuários
 
-#### Usuários comuns
+### Usuários comuns
 
 São os usuários que podem se conectar no sistema. Geralmente, estes usuários possuem uma _home_ e podem manipular arquivos quando tem as permissões para tal. Porém estes usuários geralmente não tem permissão para certos arquivos e diretórios na maquina e não podem executar muitas funções a nível de sistema.
 
-#### Usuários de sistema
+### Usuários de sistema
 
 Diferente dos usuários comuns, estes usuários não se conectam no sistema. São contas usadas para tarefas específicas dentro do sistema que não são de propriedade de uma pessoa em particular.
 
-#### Root
+### Root
 
 O usuário _root_, também chamado de superusuário, tem controle total sobre o sistema operacional. Ele pode acessar todos os arquivos e normalmente é o único que pode executar certos programas, como por exemplo o httpd.
 
@@ -92,9 +80,9 @@ root:x:0:0::/root:/bin/bash
 
 _obs: a linha de identificação do usuário root é igual a 0. Qualquer conta com a identificação de usuário igual a 0 é um root, mesmo o nome não sendo root._
 
-> ### Grupos
->
-> Um grupo é um conjunto de um ou mais usuários. É interessante reunir vários usuários em um grupo para definir suas propriedades, como as permissões. Como o arquivo [passwd](#passwd) nós temos um arquivo somente para armazenar detalhes sobre os grupos.
+## Grupos
+
+Um grupo é um conjunto de um ou mais usuários. É interessante reunir vários usuários em um grupo para definir suas propriedades, como as permissões. Como o arquivo [passwd](#passwd) nós temos um arquivo somente para armazenar detalhes sobre os grupos.
 
 _Esse arquivo esta localizado em `/etc/group`._
 
@@ -176,7 +164,3 @@ Podemos observar que, assim como no arquivo passwd, esta linha contém vários c
 ## Referências
 
 [Viva o Linux - Os Usuários do Linux](https://www.vivaolinux.com.br/artigo/Os-usuarios-do-Linux)
-
-## Autores
-
-- **Lucas Silva (LucasHe4rt)** - _Back-end Developer & Member of He4rt Developers_ - [Twitter](https://twitter.com/lucashe4rt)

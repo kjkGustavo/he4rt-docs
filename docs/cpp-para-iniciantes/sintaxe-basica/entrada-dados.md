@@ -11,7 +11,7 @@ std::cin >> <variavel>;
 
 Note que como estamos entrando com dados, temos que indicar pelo operador `>>`, sendo o inverso do operador de saída `std::cout` que utilizamos `<<`.
 
-# Exemplos
+## Exemplos
 
 - Entrada e saída de dados de um determinado aluno
 

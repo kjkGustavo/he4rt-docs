@@ -30,7 +30,7 @@ A stack tem vantagens e desvantagens:
 - A memória alocada dinamicamente deve ser acessada por meio de um ponteiro. Desreferenciar um ponteiro é mais lento do que acessar diretamente uma variável.
   Como o heap é um grande pool de memória, matrizes, estruturas ou classes grandes podem ser alocadas aqui.
 
-# A stack de chamadas
+## A stack de chamadas
 
 A stack de chamadas (geralmente chamada de "a pilha") tem um papel muito mais interessante a desempenhar. A pilha de chamadas controla todas as funções ativas (aquelas que foram chamadas, mas ainda não foram finalizadas) desde o início do programa até o ponto de execução atual e lida com a alocação de todos os parâmetros de função e variáveis locais.
 
@@ -38,7 +38,7 @@ A pilha de chamadas é implementada como uma estrutura de dados da pilha. Portan
 
 Uma estrutura de dados é um mecanismo de programação para organizar dados, para que possam ser usados com eficiência. Você já viu vários tipos de estruturas de dados, como matrizes e estruturas. Ambas as estruturas de dados fornecem mecanismos para armazenar dados e acessar esses dados de maneira eficiente. Existem muitas estruturas de dados adicionais que são comumente usadas em programação, algumas das quais são implementadas na biblioteca padrão e uma pilha é uma delas.
 
-# Funcionamento de uma Pilha
+## Funcionamento de uma Pilha
 
 - Olhe para o item superior da pilha(geralmente feito através de uma função chamada top(), mas às vezes chamada de peek())
 - Retire o item principal da pilha(feito por meio de uma função chamada pop())
@@ -58,7 +58,7 @@ Uma estrutura de dados é um mecanismo de programação para organizar dados, pa
 | Pop   |       |
 | Stack | 1     |
 
-# O segmento da stack de chamadas
+## O segmento da stack de chamadas
 
 O segmento da pilha de chamadas mantém a memória usada para a pilha de chamadas. Quando a aplicação é iniciada, a função main () é pressionada na pilha de chamadas pelo sistema operacional. Então o programa começa a executar.
 
@@ -68,7 +68,7 @@ Nossa analogia da caixa de correio acima é bastante semelhante à maneira como 
 
 A única diferença entre nossa pilha hipotética de caixa de correio e a pilha de chamadas é que, quando retiramos um item da pilha de chamadas, não precisamos apagar a memória (o equivalente a esvaziar a caixa de correio). Podemos apenas deixá-lo sobrescrito pelo próximo item enviado para esse pedaço de memória. Como o ponteiro da pilha estará abaixo desse local da memória, sabemos que o local da memória não está na pilha.
 
-# A pilha de chamadas em ação
+## A pilha de chamadas em ação
 
 Vamos examinar mais detalhadamente como a pilha de chamadas funciona. Aqui está a sequência de etapas que ocorre quando uma função é chamada:
 

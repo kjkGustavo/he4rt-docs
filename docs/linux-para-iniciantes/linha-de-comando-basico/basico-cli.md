@@ -3,8 +3,6 @@ id: linux-basico-cli
 title: Básico sobre linhas de comando
 ---
 
-# Consciência das principais aplicações e seus usos.
-
 Agora nos vamos conhecer algumas das aplicações OpenSource mais famosas que transformam o nosso querido Pinguim em um sistema Desktop completo!!.
 
 O nosso foco vai ser em aplicações OpenSource, mas várias dessas aplicações também vão estar presentes em outras sistemas operacionais. Antes de começarmos em gostaria de explicar um conceito muito importante, que são os [Ambientes Gráficos](https://pt.wikipedia.org/wiki/Ambiente_de_desktop).

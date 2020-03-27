@@ -3,24 +3,11 @@ id: linux-manipulacao
 title: Manipulação de arquivos e diretórios
 ---
 
-# 04 - Manipulação de arquivos e diretórios
-
-## Conteúdo do artigo
-
-[Criar - Arquivos e diretórios](#Criar)<br>
-[Copiar - Arquivos e diretórios](#Copiar)<br>
-[Mover - Arquivos e diretórios](#Mover)<br>
-[Remover - Arquivos e diretórios](#Remover)<br>
-[Referências](#Referências)<br>
-[Autores](#Autores)
-
----
-
 Como sabemos é possivel fazer muitas coisas utilizando a linha de comando, uma das funcionalidades também é a manipulação de arquivos que será abordado neste artigo.
 
-> ## Criar
+## Criar
 
-### **Diretórios**
+### Diretórios
 
 Para criarmos diretórios utilizamos o comando `mkdir`, que é um acrônimo para _make directory_, ele cria novos diretórios em um sistema de arquivos.
 
@@ -58,7 +45,7 @@ Exemplo6
 
 No caso acima nós criamos um diretório "pai" (Exemplo5) juntamente com um diretório "filho" (Exemplo6) dentro de outro diretório já existente (Exemplo4).
 
-### **Arquivos**
+### Arquivos
 
 O comando `touch` é muito utilizado para criarmos arquivos vazios porém ele também é capaz de alterar o registro de data e hora de arquivos e pastas mas não nos aprofundaremos nessa funcionalidade dele nesta seção.
 
@@ -88,7 +75,7 @@ exemplo1.txt exemplo2.txt  exemplo3.txt
 
 _Obs: podemos gerar nomes automaticos usando as chaves (`{}`) enquanto criamos varios arquivos desta maneira `touch exemplo{4..6}.txt`, este comando irá criar 3 arquivos chamados exemplo4.txt, exemplo5.txt e exemplo6.txt_.
 
-#### Algumas outras funcionalidades do comando touch
+## Algumas outras funcionalidades do comando touch
 
 | Opção             | Função                                            |
 | ----------------- | ------------------------------------------------- |
@@ -97,8 +84,8 @@ _Obs: podemos gerar nomes automaticos usando as chaves (`{}`) enquanto criamos v
 | -am _arquivo.txt_ | Altera a hora de acesso e modificação do arquivo  |
 | -c _arquivo.txt_  | Altera a hora de acesso sem criar um novo arquivo |
 
-> ## Copiar
->
+## Copiar
+
 > Para copiarmos um arquivo ou um diretório nós usamos o mesmo comando, o `cp`, que nos permite copiar arquivos ou diretórios para outro local.
 > Sintaxe:
 
@@ -130,8 +117,8 @@ Opção | Função
 -r, -R | Copia diretórios de forma recursiva
 -p | Preserva as permissões originais do arquivo (proprietário, grupo, etc.)
 
-> ## Mover
->
+## Mover
+
 > Para movermos ou renomearmos um aquivo ou um diretório nós usamos o comando `mv`.
 > Sintaxe:
 
@@ -173,8 +160,8 @@ Opção|Função
 -i | Pergunta se desejamos sobrescrever o arquivo destino já existente
 -n | Não sobrescrever um arquivo destino já existente
 
-> ## Remover
->
+## Remover
+
 > Para removermos arquivos e diretórios nós utilizamos o comando `rm` que nos possibilita excluir diretórios vazios, não vazios e arquivos.
 > Sintaxe:
 > `rm [opções] conteudo_excluir`
@@ -207,10 +194,9 @@ Opção|Função
 ## Referências
 
 [LinuxForce - Comando mkdir](https://www.linuxforce.com.br/comandos-linux/comandos-linux-comando-mkdir/)
+
 [Hostinger - Comando touch](https://www.hostinger.com.br/tutoriais/comando-touch-linux)
+
 [Bóson Treinamentos - Comando cp e mv](http://www.bosontreinamentos.com.br/linux/comandos-cp-e-mv-como-copiar-e-mover-arquivos-no-linux/)
+
 [LinuxForce - Comando rm](https://www.linuxforce.com.br/comandos-linux/comandos-linux-comando-rm/)
-
-## Autor
-
-- **Lucas Silva (LucasHe4rt)** - _Back-end Developer & Member of He4rt Developers_ - [Twitter](https://twitter.com/lucashe4rt)

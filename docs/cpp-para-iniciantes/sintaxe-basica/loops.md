@@ -32,7 +32,7 @@ int main ()
 }
 ```
 
-# Do while
+## Do while
 
 ```cpp{0}
 #include <iostream>

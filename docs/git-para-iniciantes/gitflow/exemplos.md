@@ -5,7 +5,7 @@ title: Exemplos
 
 Com um exemplo prático iremos montar o Gitflow com as tarefas abaixo num ambiente que já existe algumas releases e todo ambiente já preparado. Seguem as tarefas desse projeto fictício:
 
-#### Funcionalidades e Tarefas
+## Funcionalidades e Tarefas
 
 1. CRUD de Clientes
    1. Cadastro de clientes

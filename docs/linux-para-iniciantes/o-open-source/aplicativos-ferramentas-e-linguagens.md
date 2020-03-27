@@ -1,6 +1,6 @@
 ---
 id: linux-aplicativos
-title: Consciência das principais aplicações e seus usos.
+title: Principais aplicações e seus usos.
 ---
 
 Agora nos vamos conhecer algumas das aplicações OpenSource mais famosas que transformam o nosso querido Pinguim em um sistema Desktop completo!!.

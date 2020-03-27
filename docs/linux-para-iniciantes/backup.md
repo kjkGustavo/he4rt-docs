@@ -3,9 +3,9 @@ id: linux-backup
 title: Backup
 ---
 
-# Aqui tem algumas coisas que dão para reutilizar porque foram tirados do outro
+Iremos aprender nosso primeiro comando que irá nos mover para pasta raiz do sistema operacional. Para isto, abra um terminal e digite:
 
-iremos aprender nosso primeiro comando que irá nos mover para pasta raiz do sistema operacional. Para isto, abra um terminal e digite:
+> Aqui têm alguns comandos que estão sendo utilizados e que você aprendeu anteriormente :D
 
 ```console
 lucashe4rt@He4rt-PC:~$ cd /

@@ -168,7 +168,7 @@ int main()
 }
 ```
 
-# Diferença entre std::unique_ptr, std::shared_ptr e std::weak_ptr
+## Diferença entre std::unique_ptr, std::shared_ptr e std::weak_ptr
 
 std::UNIQUE_ptr como o nome diz, é único.
 
