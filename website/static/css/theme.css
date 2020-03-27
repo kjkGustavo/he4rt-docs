@@ -88,6 +88,10 @@ footer {
   margin-bottom: 40px;
 }
 
+table tr:nth-child(2n) {
+  background: transparent !important;
+}
+
 .courses {
   width: 100%;
   padding: 1rem;
