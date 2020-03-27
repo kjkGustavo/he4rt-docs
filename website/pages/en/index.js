@@ -5,49 +5,49 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require('react');
+const React = require("react");
 
 const courses = [
   {
-    title: 'Git para iniciantes',
-    content: 'Tutorial de Git para iniciantes em programação.',
+    title: "Git para iniciantes",
+    content: "Tutorial de Git para iniciantes em programação.",
     image: `https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png`,
-    imageAlign: 'top',
-    href: 'courses/git-para-iniciantes/introducao',
+    imageAlign: "top",
+    href: "courses/git-para-iniciantes/introducao",
     finished: true
   },
   {
-    title: 'Linux para iniciantes',
-    content: 'Tutorial de Linux para iniciantes em programação.',
+    title: "Linux para iniciantes",
+    content: "Tutorial de Linux para iniciantes em programação.",
     image: `https://cdn.svgporn.com/logos/linux-tux.svg`,
-    href: 'courses/linux-para-iniciantes/introducao',
-    imageAlign: 'top',
+    href: "courses/linux-para-iniciantes/introducao",
+    imageAlign: "top",
     finished: true
   },
   {
-    title: 'C++ para iniciantes',
-    content: 'Tutorial de C++ para iniciantes em programação.',
+    title: "C++ para iniciantes",
+    content: "Tutorial de C++ para iniciantes em programação.",
     image: `https://cdn.svgporn.com/logos/c-plusplus.svg`,
-    imageAlign: 'top',
-    href: 'git-para-iniciantes',
+    imageAlign: "top",
+    href: "courses/cpp-para-iniciantes/introducao",
     finished: true
   },
   {
-    title: 'PHP para iniciantes',
-    content: 'Tutorial de PHP para iniciantes em programação.',
+    title: "PHP para iniciantes",
+    content: "Tutorial de PHP para iniciantes em programação.",
     image: `https://cdn.svgporn.com/logos/php.svg`,
-    imageAlign: 'top',
-    href: '#',
+    imageAlign: "top",
+    href: "#",
     finished: false
   }
 ];
 
 class HomeSplash extends React.Component {
   render() {
-    const { siteConfig, language = '' } = this.props;
+    const { siteConfig, language = "" } = this.props;
     const { baseUrl, docsUrl } = siteConfig;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-    const langPart = `${language ? `${language}/` : ''}`;
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
+    const langPart = `${language ? `${language}/` : ""}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
     const SplashContainer = props => (
@@ -79,7 +79,7 @@ class HomeSplash extends React.Component {
             {courses.map(c => (
               <a
                 key={c.href}
-                className={!c.finished ? 'course soon' : 'course'}
+                className={!c.finished ? "course soon" : "course"}
                 href={c.href}
               >
                 <img src={c.image} width="120px" />
@@ -97,7 +97,7 @@ class HomeSplash extends React.Component {
 
 class Index extends React.Component {
   render() {
-    const { config: siteConfig, language = '' } = this.props;
+    const { config: siteConfig, language = "" } = this.props;
     const { baseUrl } = siteConfig;
 
     return (

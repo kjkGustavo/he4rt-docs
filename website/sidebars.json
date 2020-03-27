@@ -61,5 +61,72 @@
       "linux-para-iniciantes/linux-backup",
       "linux-para-iniciantes/linux-estrutura-diretorios"
     ]
+  },
+  "cpp-para-iniciantes": {
+    "Introdução": ["cpp-para-iniciantes/introducao"],
+    "Configurando o Ambiente": [
+      "cpp-para-iniciantes/ambiente/cplusplus-configurando",
+      "cpp-para-iniciantes/ambiente/cplusplus-falcon"
+    ],
+    "Teoria": ["cpp-para-iniciantes/teoria/cplusplus-teoria"],
+    "Hello World": [
+      "cpp-para-iniciantes/hello-word/cplusplus-hello",
+      "cpp-para-iniciantes/hello-word/cplusplus-sequencia",
+      "cpp-para-iniciantes/hello-word/cplusplus-biblioteca",
+      "cpp-para-iniciantes/hello-word/cplusplus-main",
+      "cpp-para-iniciantes/hello-word/cplusplus-saida-dados",
+      "cpp-para-iniciantes/hello-word/cplusplus-exercicios-1"
+    ],
+    "Introdução ao compilador": [
+      "cpp-para-iniciantes/introducao-compilador/cplusplus-compilador",
+      "cpp-para-iniciantes/introducao-compilador/cplusplus-vinculador"
+    ],
+    "Sintaxe básica": [
+      "cpp-para-iniciantes/sintaxe-basica/cplusplus-variaveis",
+      "cpp-para-iniciantes/sintaxe-basica/cplusplus-comentarios",
+      "cpp-para-iniciantes/sintaxe-basica/cplusplus-entrada-dados",
+      "cpp-para-iniciantes/sintaxe-basica/cplusplus-operacoes",
+      "cpp-para-iniciantes/sintaxe-basica/cplusplus-std-string",
+      "cpp-para-iniciantes/sintaxe-basica/cplusplus-condicoes",
+      "cpp-para-iniciantes/sintaxe-basica/cplusplus-operadores-logicos",
+      "cpp-para-iniciantes/sintaxe-basica/cplusplus-switch",
+      "cpp-para-iniciantes/sintaxe-basica/cplusplus-loops",
+      "cpp-para-iniciantes/sintaxe-basica/cplusplus-teste-mesa",
+      "cpp-para-iniciantes/sintaxe-basica/cplusplus-vetores",
+      "cpp-para-iniciantes/sintaxe-basica/cplusplus-matrizes"
+    ],
+    "Funções no CPP": [
+      "cpp-para-iniciantes/funcoes/cplusplus-funcoes",
+      "cpp-para-iniciantes/funcoes/cplusplus-prototipo",
+      "cpp-para-iniciantes/funcoes/cplusplus-argumentos",
+      "cpp-para-iniciantes/funcoes/cplusplus-recursao",
+      "cpp-para-iniciantes/funcoes/cplusplus-funcoes-lambda",
+      "cpp-para-iniciantes/funcoes/cplusplus-keyword-static"
+    ],
+    "Cabeçalho": [
+      "cpp-para-iniciantes/cabecalho/cplusplus-header",
+      "cpp-para-iniciantes/cabecalho/cplusplus-protetores",
+      "cpp-para-iniciantes/cabecalho/cplusplus-namespace"
+    ],
+    "Ponteiros": [
+      "cpp-para-iniciantes/ponteiros/cplusplus-introducao-ponteiros",
+      "cpp-para-iniciantes/ponteiros/cplusplus-smart-pointers"
+    ],
+    "Intermediário": [
+      "cpp-para-iniciantes/intermediario/cplusplus-structs",
+      "cpp-para-iniciantes/intermediario/cplusplus-templates",
+      "cpp-para-iniciantes/intermediario/cplusplus-instancia-modelo",
+      "cpp-para-iniciantes/intermediario/cplusplus-stack-heap",
+      "cpp-para-iniciantes/intermediario/cplusplus-auto-keyword",
+      "cpp-para-iniciantes/intermediario/cplusplus-big-o"
+    ],
+    "Orientação a Objetos (OOP)": [
+      "cpp-para-iniciantes/orientacao-objetos/cplusplus-introducao-objetos",
+      "cpp-para-iniciantes/orientacao-objetos/cplusplus-classes-objetos",
+      "cpp-para-iniciantes/orientacao-objetos/cplusplus-keyword-public",
+      "cpp-para-iniciantes/orientacao-objetos/cplusplus-setters-getters",
+      "cpp-para-iniciantes/orientacao-objetos/cplusplus-construtores-objetos",
+      "cpp-para-iniciantes/orientacao-objetos/cplusplus-classes-headers"
+    ]
   }
 }
