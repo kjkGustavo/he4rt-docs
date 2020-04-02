@@ -39,6 +39,14 @@ const courses = [
     imageAlign: "top",
     href: "#",
     finished: false
+  },
+  {
+    title: "Elixir para iniciantes",
+    content: "Tutorial de Elixir para iniciantes em programação.",
+    image: `https://www.vectorlogo.zone/logos/elixir-lang/elixir-lang-icon.svg`,
+    imageAlign: "top",
+    href: "courses/elixir-para-iniciantes/introducao",
+    finished: false
   }
 ];
 
