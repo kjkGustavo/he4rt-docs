@@ -33,6 +33,14 @@ const courses = [
     finished: true
   },
   {
+    title: "Guia do Arch-Linux",
+    content: "Guia de instalação do Arch-Linux",
+    image: `https://cdn.svgporn.com/logos/archlinux.svg`,
+    imageAlign: "top",
+    href: "courses/guia-archlinux/introducao",
+    finished: true
+  },
+  {
     title: "PHP para iniciantes",
     content: "Tutorial de PHP para iniciantes em programação.",
     image: `https://cdn.svgporn.com/logos/php.svg`,
