@@ -1,9 +1,6 @@
 ---
 title: Introdução
-author: Frank Li
-authorURL: http://twitter.com/franchementli
-authorFBID: 100002976521003
-custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
+custom_edit_url: https://github.com/LucasHe4rt/linux4noobs
 id: introducao
 ---
 
