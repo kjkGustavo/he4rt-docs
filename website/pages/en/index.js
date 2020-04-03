@@ -45,7 +45,15 @@ const courses = [
     content: "Tutorial de PHP para iniciantes em programação.",
     image: `https://cdn.svgporn.com/logos/php.svg`,
     imageAlign: "top",
-    href: "#",
+    href: null,
+    finished: false
+  },
+  {
+    title: "Vue para iniciantes",
+    content: "Tutorial de Vue para iniciantes em programação.",
+    image: `https://cdn.svgporn.com/logos/vue.svg`,
+    imageAlign: "top",
+    href: null,
     finished: false
   }
 ];
@@ -88,7 +96,7 @@ class HomeSplash extends React.Component {
               <a
                 key={c.href}
                 className={!c.finished ? "course soon" : "course"}
-                href={c.href}
+                href={c.href && c.href}
               >
                 <img src={c.image} width="120px" />
                 <h3>{c.title}</h3>
