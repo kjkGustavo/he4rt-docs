@@ -3,6 +3,8 @@ id: win-verificacao-disco
 title: Verificação de Disco Rígido
 ---
 
+## Verificação de Disco
+
 A verificação de Disco Rígido serve para certificar de que o Disco e o
 Windows estão funcionando perfeitamente, visto que problemas no disco
 rígido são as principais causas de lentidão no sistema operacional
@@ -20,13 +22,13 @@ Para rodar o programa, caso você esteja no WINDOWS 10, clique com o
 botão direito do mouse no menu inciar do Windows e clique em "Windows
 PowerShell (Admin)".
 
-<img src="..\imagens\shellwin10.png" width="150px">
+![shell](assets/images/windows-para-iniciantes/shellwin10.png)
 
 Caso você utilize Windows 7, clique no
 iniciar, pesquise por 'cmd' e clique com o botão direito e execute como
 Administrador.
 
-<img src="..\imagens\shellwin7.png" width="">
+![shell](assets/images/windows-para-iniciantes/shellwin7.png)
 
 Feito isso, você digita 'chkdsk /r' e aperte Enter, depois disso irá
 aparecer uma mensagem perguntando se você quer executar essa análise

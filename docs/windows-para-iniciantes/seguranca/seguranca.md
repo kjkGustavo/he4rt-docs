@@ -1,6 +1,9 @@
-<h1>Segurança no Windows</h1>
-<hr>
-<h5 style="margin-left:25px">3.0 Proteção dentro do navegador</h5>
+---
+id: win-seguranca
+title: Segurança no Windows
+---
+
+## Proteção dentro do navegador
 
 Para manter o navegador seguro, é fundamental você ter um bloqueador de
 propagandas e um analisador de URL, além do BlockAD, bloquear obviamente
@@ -48,7 +51,7 @@ disponível em diversos navegadores também.
 Ou se preferir, pesquise por 'Traffic Light' e em seguida o nome do seu
 navegador.
 
-<h5 style="margin-left:25px">3.1 Como funcionam os antivírus e opções</h5>
+### Como funcionam os antivírus e opções
 
 Os antivírus usam tecnologias para conseguir identificar uma ameaça em
 seu computador, dentre elas, existem as: Assinatura, heurística, HIPS,
@@ -66,7 +69,7 @@ programação, possibilitando que qualquer pessoa crie.
 Nesses casos, é criado a variante de um vírus, como pode ser visto nesse
 caso:
 
-<img src="../imagens/variante1.png" width="190px">
+![variante](assets/images/windows-para-iniciantes/variante1.png)
 
 Porém essa análise é falha, pois caso fosse criado um malware
 desconhecido, com código fonte completamente diferente, passaria abatido
@@ -151,34 +154,3 @@ Windows Defender(Vem junto com o Windows 10) <storm style=color:blue>TOP</storm>
 [[https://www.pandasecurity.com]](https://www.pandasecurity.com/) - Panda
 
 [[https://www.avira.com/pt-br]](https://www.avira.com/pt-br) - Avira
-
-<h5 style="margin-left:25px">3.2 Tela azul da morte</h5>
-
-A tela azul acontece quando o próprio Windows fica instável, e ao
-contrário do que é acreditado, ele NÃO está travado, o erro em questão é
-colocado em DUMP pela memória e depois o sistema é reiniciado, ele
-apenas bloqueia qualquer interação via mouse/teclado do usuário.
-
-A informacao mais importante da tela azul é o Stop code, mas segundo a
-telemetria do Windows, 20 desses códigos são responsável por 90% dos
-casos, de 300 codes.
-
-Os mais comuns estão relacionados a memória ram, incompatibilidade e
-drivers.
-
-Recomendo que, para que se possa monitorar esses erros, você ative o
-mini dump, para isso, vá para:
-
-Abrir o Explorar de arquivos → clique com o botão direito em 'Meu
-computador' e 'Propriedades' → Configurações Avançadas do Sistema →
-Terceiro e último botão de Configurações(inicialização e recuperação) e
-escolha a opção 'Despejo de memória pequeno (256KB) em 'Gravando
-informações de depuração' clique em Ok até fechar tudo.
-
-Para que se possa monitorar esse erro, basta baixar esse programa:
-
-[[https://www.nirsoft.net/utils/blue\_screen\_view.html]]()
-
-Com o programa instalado, depois de ocorrer a tela azul, basta abrir ele
-e será lhe mostrado EXATAMENTE o que causou o erro(driver responsável
-pelo erro).

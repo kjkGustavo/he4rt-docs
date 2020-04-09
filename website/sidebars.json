@@ -132,19 +132,25 @@
       "cpp-para-iniciantes/orientacao-objetos/cplusplus-classes-headers"
     ]
   },
-  "elixir-para-iniciantes": {
-    "Introdução": ["elixir-para-iniciantes/introducao"],
-    "Sobre o projeto": [
-      "elixir-para-iniciantes/introducao/elixir-sobre-projeto",
-      "elixir-para-iniciantes/introducao/elixir-pre-requisitos"
+  "windows-para-iniciantes": {
+    "Introdução": ["windows-para-iniciantes/introducao"],
+    "Manutenção": [
+      "windows-para-iniciantes/manutencao/win-verificacao-disco",
+      "windows-para-iniciantes/manutencao/win-limpeza-disco",
+      "windows-para-iniciantes/manutencao/win-corrigindo"
     ],
-    "Ambiente": ["elixir-para-iniciantes/ambiente/elixir-como-comecar"],
-    "Linguagem": [
-      "elixir-para-iniciantes/linguagem/elixir-sobre-linguagem",
-      "elixir-para-iniciantes/linguagem/elixir-paradigma",
-      "elixir-para-iniciantes/linguagem/elixir-sintaxe",
-      "elixir-para-iniciantes/linguagem/elixir-variaveis",
-      "elixir-para-iniciantes/linguagem/elixir-modulos"
+    "Otimização": [
+      "windows-para-iniciantes/otimizacao/win-otimizacao",
+      "windows-para-iniciantes/otimizacao/win-rapidez",
+      "windows-para-iniciantes/otimizacao/win-ativadores"
+    ],
+    "Segurança": [
+      "windows-para-iniciantes/seguranca/win-seguranca",
+      "windows-para-iniciantes/seguranca/win-tela-azul"
+    ],
+    "Estrutura": ["windows-para-iniciantes/estrutura-pastas/win-estrutura"],
+    "Para desenvolvedores": [
+      "windows-para-iniciantes/para-dev/win-desenvolvimento"
     ]
   }
 }

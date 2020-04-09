@@ -1,25 +1,41 @@
-# Windows4noobs
-<hr>
+---
+title: Introdução
+id: introducao
+---
+
 <h1 align="center">
-  <img src="/imagens/windows.png" alt="tux" width="120">
+  <img src="../assets/images/windows-para-iniciantes/windows.svg" alt="Windows" width="120px" />
 </h1>
 
-<p align="center">Tutorial De Windows para iniciantes.</p>
-<hr>
+<p align="center">Tutorial de windows para iniciantes.</p>
 
 ## ROADMAP
 
-### Windows
+### Manutenção no Windows
 
-  1. [Manutenção no Windows](/1-Manutenção%20no%20Windows/Manutenção%20no%20Windows.md)
-  2. [Otimização no Windows](/2-Otimização%20no%20Windows/Otimização%20no%20Windows.md)
-  3. [Segurança no Windows](/3-Segurança%20no%20Windows/segurança%20no%20windows.md)
-  4. [Estrutura de pastas](/4-Estrutura%20de%20pastas/Estrutura%20de%20pastas.md)
-  5. [Para desenvolvedores](/5-Para%20desenvolvedores/Para%20desenvolvedores.md)
-  <hr>
-<h3>Autores</h3>
+1. [Verificação de Disco](manutencao/win-verificacao-disco)
+2. [Limpeza de Disco](manutencao/win-limpeza-disco)
+3. [Corrigindo arquivos do Windows](manutencao/win-corrigindo)
 
+### Otimização no Windows
 
-* Vitor Souza (vsaHe4rt) - Web Developer - [Twitter](https://twitter.com/TrueHooha_)
+1. [Otimização](otimizacao/win-otimizacao)
+2. [Rapidez](otimizacao/win-rapidez)
+3. [Ativadores](otimizacao/win-ativadores)
 
-<p align="center">Made with He4rt</p>
+### Segurança no Windows
+
+1.  [Segurança](seguranca/win-seguranca)
+2.  [Tela Azul](seguranca/win-tela-azul)
+
+### Estrutura de Pastas
+
+1. [Estrutura de Pastas](estrutura-pastas/win-estrutura)
+
+### Para Desenvolvedores
+
+1. [Para Desenvolvedores](para-dev/win-desenvolvimento)
+
+## Autores
+
+- **Vitor Souza (vsaHe4rt)** - _Web Developer_ - [Twitter](https://twitter.com/TrueHooha_)
