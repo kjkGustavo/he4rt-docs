@@ -132,6 +132,27 @@
       "cpp-para-iniciantes/orientacao-objetos/cplusplus-classes-headers"
     ]
   },
+  "windows-para-iniciantes": {
+    "Introdução": ["windows-para-iniciantes/introducao"],
+    "Manutenção": [
+      "windows-para-iniciantes/manutencao/win-verificacao-disco",
+      "windows-para-iniciantes/manutencao/win-limpeza-disco",
+      "windows-para-iniciantes/manutencao/win-corrigindo"
+    ],
+    "Otimização": [
+      "windows-para-iniciantes/otimizacao/win-otimizacao",
+      "windows-para-iniciantes/otimizacao/win-rapidez",
+      "windows-para-iniciantes/otimizacao/win-ativadores"
+    ],
+    "Segurança": [
+      "windows-para-iniciantes/seguranca/win-seguranca",
+      "windows-para-iniciantes/seguranca/win-tela-azul"
+    ],
+    "Estrutura": ["windows-para-iniciantes/estrutura-pastas/win-estrutura"],
+    "Para desenvolvedores": [
+      "windows-para-iniciantes/para-dev/win-desenvolvimento"
+    ]
+  },
   "guia-archlinux": {
     "Introdução": ["guia-archlinux/introducao"],
     "O Começo": [
