@@ -152,5 +152,20 @@
     "Para desenvolvedores": [
       "windows-para-iniciantes/para-dev/win-desenvolvimento"
     ]
+  },
+  "guia-archlinux": {
+    "Introdução": ["guia-archlinux/introducao"],
+    "O Começo": [
+      "guia-archlinux/introducao/arch-boas-vindas",
+      "guia-archlinux/introducao/arch-archlinux"
+    ],
+    "Pré-instalação": ["guia-archlinux/pre-instalacao/arch-primeiros-passos"],
+    "Instalação": ["guia-archlinux/instalacao/arch-essencial"],
+    "Configuração": [
+      "guia-archlinux/configuracao/arch-fstab",
+      "guia-archlinux/configuracao/arch-network",
+      "guia-archlinux/configuracao/arch-grub"
+    ],
+    "GUI": ["guia-archlinux/gui/arch-gui"]
   }
 }
