@@ -33,6 +33,14 @@ const courses = [
     finished: true
   },
   {
+    title: "Windows para iniciantes",
+    content: "Tutorial de Windows para iniciantes na área.",
+    image: `https://cdn.svgporn.com/logos/microsoft-windows.svg`,
+    imageAlign: "top",
+    href: "courses/windows-para-iniciantes/introducao",
+    finished: true
+  },
+  {
     title: "Guia do Arch-Linux",
     content: "Guia de instalação do Arch-Linux",
     image: `https://cdn.svgporn.com/logos/archlinux.svg`,
@@ -55,7 +63,7 @@ const courses = [
     imageAlign: "top",
     href: null,
     finished: false
-  }
+  },
 ];
 
 class HomeSplash extends React.Component {
